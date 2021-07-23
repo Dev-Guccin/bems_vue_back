@@ -1,8 +1,8 @@
 #!/usr/bin/env node
-var fs = require('fs');
+let fs = require('fs');
 
-var Handler = {
-    restart_all: function () {
+let Handler = {
+    restart_all: function () {// 미완성
         //config파일 확인하기
         let active = Handler.get_config()
         // 해당 통신모듈 전부 삭제
@@ -16,9 +16,11 @@ var Handler = {
         }else if(active[2] == 1){
             Handler.delete_module("database")
             Handler.start_module("database", "./utils/module/Database_module/database_control.js")
+        }else{
+
         }
     },
-    restart_only: function (target) {
+    restart_only: async function (target) {
         //config확인을 통해 해당 통신확인
         let active = Handler.get_config()
         console.log(active)
@@ -26,29 +28,27 @@ var Handler = {
             if (active[0] == 0) {
                 return false
             }
-            // 해당 통신 종료
-            Handler.delete_module("modbus")
-            // 재실
-            Handler.start_module("modbus", "./utils/modules/Modbus_module.js")
+            await Handler.delete_module("modbus")// 해당 통신 종료
+            Handler.start_module("modbus", "./utils/modules/Modbus_module.js")// 재실행
         }
         else if (target == "bacnet") {
             if (active[1] == 0) {
                 return false
             }
-            // 해당 통신 종료
-            Handler.delete_module("bacnet")
-            // 재실행
-            Handler.start_module("bacnet", "./utils/modules/Bacnet_module.js")
+            await Handler.delete_module("bacnet")// 해당 통신 종료
+            Handler.start_module("bacnet", "./utils/modules/Bacnet_module.js")// 재실행
 
         }
         else if (target == "database") {
             if (active[2] == 0) {
                 return false
             }
-            // 해당 통신 종료
-            Handler.delete_module("database")
-            // 재실행
-            Handler.start_module("database", "./utils/modules/Database_module.js")
+            await Handler.delete_module("database")// 해당 통신 종료
+            Handler.start_module("database", "./utils/modules/Database_module.js")// 재실행
+        }
+        else if (target == "batch") {
+            await Handler.delete_module("batch")// 해당 통신 종료
+            Handler.start_module("batch", "./utils/modules/Batch_module.js")// 재실행
         }
         else {//target == wrong
             console.log("target wrong")
@@ -59,6 +59,7 @@ var Handler = {
         Handler.stop_module("modbus")
         Handler.stop_module("bacnet")
         Handler.stop_module("database")
+        Handler.stop_module("batch")
     },
     stop_only: function (target) {
         //config확인을 통해 해당 통신확인
@@ -82,6 +83,9 @@ var Handler = {
             }
             Handler.stop_module("database")
         }
+        else if (target == "batch") {
+            Handler.stop_module("batch")
+        }
         else {//target == wrong
             console.log("target wrong")
             return false
@@ -100,31 +104,37 @@ var Handler = {
         return active
     },
     delete_module: function (filename) {
-        console.log("[+] delete module :", filename)
-        var pm2 = require('pm2')
-        pm2.connect(function (err) {
-            if (err) {
-                console.error(err)
-                process.exit(2)
-            }
-            pm2.delete(filename, function (err, apps) {
+        return new Promise(async function(resolve, reject) {
+            console.log("[+] delete module :", filename)
+            let pm2 = require('pm2')
+            pm2.connect(function (err) {
                 if (err) {
                     console.error(err)
-                    return pm2.disconnect()
+                    resolve(false)
                 }
                 pm2.list((err, list) => {
-                    console.log(err, list)
-                    pm2.restart('api', (err, proc) => {
-                        // Disconnects from PM2
-                        pm2.disconnect()
-                    })
+                    list.forEach(element => {
+                        if(element.name == filename){//모듈이 돌고 있는것을 찾으면 종료시킨다.
+                            console.log("[+] found module!!!", element.name)
+                            pm2.delete(filename, function (err, apps) {
+                                if (err) {
+                                    console.error(err)
+                                    pm2.disconnect()
+                                }
+                                pm2.disconnect()
+                                resolve(true)
+                            })
+                        }
+                    });
+                    pm2.disconnect()
+                    resolve(false)
                 })
             })
-        })
+        });
     },
     start_module: function (filename, filepath) {
         console.log("[+] start moduel : ", filename,"   path:",filepath)
-        var pm2 = require('pm2')
+        let pm2 = require('pm2')
         pm2.connect(function (err) {
             if (err) {
                 console.error(err)
@@ -139,41 +149,60 @@ var Handler = {
                     console.error(err)
                     return pm2.disconnect()
                 }
-                pm2.list((err, list) => {
-                    console.log(err, list)
-                    pm2.restart('api', (err, proc) => {
-                        // Disconnects from PM2
-                        pm2.disconnect()
-                    })
-                })
+                pm2.disconnect()
             })
         })
     },
     stop_module: function(filename){
-        console.log("[+] stop moduel : ", filename)
-        var pm2 = require('pm2')
+        console.log("[+] stop module : ", filename)
+        let pm2 = require('pm2')
         pm2.connect(function (err) {
             if (err) {
                 console.error(err)
                 process.exit(2)
             }
-            pm2.stop({
-                name: filename,
-            }, function (err, apps) {
-                if (err) {
-                    console.error(err)
-                    return pm2.disconnect()
-                }
-                pm2.list((err, list) => {
-                    console.log(err, list)
-                    pm2.restart('api', (err, proc) => {
-                        // Disconnects from PM2
-                        pm2.disconnect()
-                    })
-                })
+            pm2.list((err, list) => {
+                console.log(err, list)
+                list.forEach(element => {
+                    if(element.name == filename){//모듈이 돌고 있는것을 찾으면 종료시킨다.
+                        console.log("[+] found module!!!", element.name)
+                        pm2.stop(filename, function (err, apps) {
+                            if (err) {
+                                console.error(err)
+                                return pm2.disconnect()
+                            }
+                            pm2.disconnect()
+                        })
+                    }
+                });
             })
         })
-    }
+    },
+    module_check: function(){
+        return new Promise(async function(resolve, reject) {
+            let pm2 = require('pm2')
+            pm2.connect(function (err) {
+                if (err) {
+                    console.error(err)
+                    resolve({'state':'error'})
+                }
+                pm2.list((err, list) => {
+                    let checklist = {'modbus':'', 'bacnet':'', 'database':'', 'batch':''};
+                    list.forEach(element => {
+                        console.log(element.name, element.pm2_env.status)
+                        if(checklist[element.name]!=undefined){
+                            if(element.pm2_env.status == 'online')
+                                checklist[element.name]='online'
+                            else if(element.pm2_env.status == 'stop')
+                                checklist[element.name]='stop'
+                        }
+                    });
+                    console.log(checklist)
+                    resolve(checklist);
+                });
+            });
+        });
+    },
 }
 
 module.exports = Handler

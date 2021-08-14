@@ -26,6 +26,14 @@ router.get('/module_check', async function (req, res, next) {
     res.send(checklist);
 });
 
+router.get('/module_log_check/:module/:type', async function (req, res, next) {
+    console.log("module_log_check");
+    let module = req.params.module;
+    let type = req.params.type;
+    let log_data=await Handler.get_logfile(module,type);
+    res.send(log_data);
+});
+
 
 
 module.exports = router;

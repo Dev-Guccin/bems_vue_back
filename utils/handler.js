@@ -132,18 +132,41 @@ let Handler = {
             })
         });
     },
-    start_module: function (filename, filepath) {
-        console.log("[+] start moduel : ", filename,"   path:",filepath)
+    delete_logfile: function(filePath){
+        fs.access(filePath, fs.constants.F_OK, (err) => { // A
+            if (err) return console.log('삭제할 수 없는 파일입니다');
+            fs.unlink(filePath, (err) => err ?  
+              console.log(err) : console.log(`${filePath} 를 정상적으로 삭제했습니다`));
+        });
+    },
+    get_logfile: async function(fileName, fileType){
+        return new Promise(async function(resolve, reject) {
+            let filePath = __dirname+`/log/${fileName}-${fileType}.log`
+            fs.readFile(filePath, 'utf8', function(err, data){
+                resolve(data)
+            });
+        });
+    },
+    start_module: function (fileName, filePath) {
+        console.log("[+] start moduel : ", fileName,"   path:",filePath)
         let pm2 = require('pm2')
         pm2.connect(function (err) {
             if (err) {
                 console.error(err)
                 process.exit(2)
             }
+            Handler.delete_logfile(__dirname+`/log/${fileName}-out.log`);
+            Handler.delete_logfile(__dirname+`/log/${fileName}-err.log`);
             pm2.start({
-                script: filepath,
-                name: filename,
-                autorestart: false
+                script: filePath,
+                name: fileName,
+                autorestart: false,
+                //merge_logs: true,
+                //combine_logs: true,
+                env:{
+                    pm_out_log_path :__dirname+`/log/${fileName}-out.log`,
+                    pm_err_log_path :__dirname+`/log/${fileName}-err.log`,
+                },
             }, function (err, apps) {
                 if (err) {
                     console.error(err)

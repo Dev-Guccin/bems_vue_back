@@ -74,7 +74,7 @@
 export default {
   data() {
     return {
-      logFile: 1,
+      logFile: "Click check button",
       moduleSelected:"MODBUS",
       logtypeSelected:"out",
     };

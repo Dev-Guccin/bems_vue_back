@@ -1,21 +1,25 @@
 <template>
   <div class="home">
     <p> > 건물 에너지 사용 현황</p>
-    <b-container class="px-0 mx-auto" style="height:400px;">
+    <b-container 
+      class="px-0 mx-auto" 
+      style=""
+      fluid
+      >
       <b-row>
-        <b-col cols="">
+        <b-col cols="8">
           <b-card
-            height="400px"
             class="text-center"
             header="건물 기본정보"
             header-tag="header"
-            center
+            style="padding:0px;"
           >
-          <b-card-body>
-            <b-container>
+          <b-card-body style="padding:0px;">
+            <b-container style="padding:0px;">
               <b-row>
                 <b-col>
-                  <b-img fluid src="@/assets/building_test.jpg" alt="Vue_logo"></b-img>
+                  <b-img src="@/assets/building_test.jpg" alt="Vue_logo"
+                    fluid></b-img>
                 </b-col>
                 <b-col>
                  <b-table-simple>

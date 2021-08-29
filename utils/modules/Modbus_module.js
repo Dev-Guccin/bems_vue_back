@@ -1,11 +1,11 @@
 const DBH = require('./database.js')
-let Excel = require('./get_excel.js')
 const Modbus = require('jsmodbus')
 const SerialPort = require('serialport')
 const net = require('net')
 const { timeStamp } = require('console')
 const { stringify } = require('querystring')
 const { channel_inc_err } = require('./database.js')
+let Excel = require('./get_excel.js')
 const sockets = []
 const clients = []
 const rtu_clients = []
@@ -66,7 +66,7 @@ function Detail() {
 modbus_poll()
 
 async function modbus_poll() {
-    await Excel.loadExcelFile()
+    await Excel.loadExcelFile_modbus()
     await getInfo()
     //modbus poll시작하기 전에 excel정합성 확인
     for (let key in channel_range) {

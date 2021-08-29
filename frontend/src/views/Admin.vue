@@ -1,71 +1,62 @@
 <template>
   <div>
-    <v-container>
-      <v-row align="right">
-        <v-card>modbus: , bacnet, database</v-card> 
-        <v-btn
-        small
-          elevation="2"
-          v-on:click="checkFunction()"
-        >module check</v-btn>
-      </v-row>
-      <p></p>
-      <v-row>
-        <v-btn small color="blue" v-on:click="restartFunction('modbus')">Modbus restart</v-btn>
-        <v-btn small color="blue" v-on:click="stopFunction('modbus')">Modbus stop</v-btn>
-        <v-btn small color="teal" v-on:click="restartFunction('bacnet')">Bacnet restart</v-btn>
-        <v-btn small color="teal" v-on:click="stopFunction('bacnet')">Bacnet stop</v-btn>
-      </v-row>
-      <v-row>
-         <v-btn small color="grey" v-on:click="restartFunction('database')">Database restart</v-btn>
-         <v-btn small color="grey" v-on:click="stopFunction('database')">Database stop</v-btn>
-        <v-btn small color="grey" v-on:click="restartFunction('batch')">Batch restart</v-btn>
-        <v-btn small color="grey" v-on:click="stopFunction('batch')">Batch stop</v-btn>
-      </v-row>
-    </v-container>
-    <v-container>
-      <v-row>
-        <v-col>
-          <v-select
-        dense
-        v-model="moduleSelected"
-        :items="['MODBUS', 'BACNET', 'DATABASE', 'BATCH']"
-        label="Please select a module to check the log."
-      ></v-select>
-        </v-col>
-        <v-col>
-        <v-radio-group row v-model="logtypeSelected">
-      <v-radio
-        label="out"
-        value="out"
-        ></v-radio>
-      <v-radio
-        label="err"
-        value="err"
-      ></v-radio>
-    </v-radio-group>
-        </v-col>
-        <v-col>
-      <v-btn small v-on:click="log_check()">log check</v-btn>
-        </v-col>
-      </v-row>
-      <v-card elevation="1"
-        v-scroll.self="onScroll"
-        class="overflow-y-auto"
-        max-height="500"
-        dark
-        card-text-font-size="1px"
-        >  
-        <v-card-text>
-          <pre v-html="logFile" small></pre>
-        </v-card-text>
-      </v-card>
-    </v-container>
-    <v-container>
-      <v-layout row>
-        
-      </v-layout>
-    </v-container>
+    <b-container 
+      class="px-0 mx-auto">
+      <b-row>
+        <b-col>
+        <b-card>
+          modbus: , bacnet, database
+        </b-card>
+        </b-col>
+        <b-col>
+        <b-button size="sm" variant="outline-secondary" v-on:click="checkFunction()"
+          >MODULE CHECK</b-button>
+        </b-col>
+      </b-row>
+      <b-row>
+        <p></p>
+      </b-row>
+      <b-row>
+        <b-col>
+          <b-form-select
+            plain="true"
+            v-model="selected" :options="options"
+            ></b-form-select>
+        </b-col>
+        <b-col>
+          <b-button size="sm" variant="outline-secondary"
+              v-on:click="restartFunction()">RESTART</b-button>
+          <b-button size="sm" variant="outline-secondary"
+              v-on:click="stopFunction()">STOP</b-button>
+        </b-col>
+      </b-row>
+      <b-row>
+        <p></p>
+      </b-row>
+      <b-row>
+        <b-col>
+         <b-form-group v-slot="{ ariaDescribedby }">
+          <b-form-radio-group
+            v-model="console_selected"
+            :options="console_options"
+            :aria-describedby="ariaDescribedby"
+            name="plain-inline"
+            plain
+            ></b-form-radio-group>
+          </b-form-group>
+        </b-col>
+        <b-col>
+          <b-btn size="sm" variant="outline-secondary" v-on:click="log_check()">GET LOG BUTTON</b-btn>
+        </b-col>
+      </b-row>
+      <b-row>
+        <p></p>
+      <b-card bg-variant="dark" text-variant="white">
+        <b-card-text v-html="logFile">
+        </b-card-text>
+      </b-card>
+      </b-row>
+    </b-container>
   </div>
 </template>
 
@@ -75,24 +66,35 @@ export default {
   data() {
     return {
       logFile: "Click check button",
-      moduleSelected:"MODBUS",
-      logtypeSelected:"out",
+      moduleSelected:"modbus",
+      selected: "modbus",
+      options: [
+          { value: "modbus", text: 'Modbus Module' },
+          { value: 'bacnet', text: 'Bacnet Module' },
+          { value: 'database', text: 'Database Module' },
+          { value: 'batch', text: 'Batch Module' },
+        ],
+      console_selected: "output",
+      console_options:[
+        { value: "out", text:"output"},
+        { value: "err", text:"error"}
+      ]
     };
   },
   components: {
 
   },
   methods: {
-    restartFunction(module){
-      this.$http.get("/api/settings/restart_only/"+module).then(function(response) {
+    restartFunction(){
+      this.$http.get("/api/settings/restart_only/"+this.selected).then(function(response) {
           console.log(response);
         })
         .catch(function(error) {
           console.log(error);
         });
     },
-    stopFunction(module){
-      this.$http.get("/api/settings/stop_only/"+module).then(function(response) {
+    stopFunction(){
+      this.$http.get("/api/settings/stop_only/"+this.selected).then(function(response) {
           console.log(response);
         })
         .catch(function(error) {
@@ -108,12 +110,11 @@ export default {
         });
     },
     log_check(){
-       console.log(this.moduleSelected,this.logtypeSelected)
-       this.$http.get("/api/settings/module_log_check/"+this.moduleSelected+"/"+this.logtypeSelected).then((response) => {
+       this.$http.get("/api/settings/module_log_check/"+this.selected+"/"+this.console_selected).then((response) => {
           console.log(response.data);
           console.log("이거 제대로 되냐? ");
           console.log(this.logFile);
-          this.logFile = response.data;
+          this.logFile = response.data.replace(/\n/g, '<br />');
           console.log("testseet",this.logFile);
         })
         .catch((error) => {

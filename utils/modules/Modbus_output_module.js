@@ -1,15 +1,18 @@
 const DBH = require('./database.js')
 const Modbus = require('jsmodbus')
 const net = require('net')
-// const Buffer = require('buffer');
 
 var ctrl_list =  new Array();
 
-start()
-async function start(){
+
+setInterval(() => ctrl_check_start(), 2000)
+
+async function ctrl_check_start(){
     await get_info()
     modbus_output()
 }
+
+
 function ctrl_target() {
     ip = '',
     port = 0,
@@ -21,6 +24,7 @@ function ctrl_target() {
     func = 0
     address = 0
 }
+
 function get_info(){
     return new Promise(async function(resolve, reject) {
         var rows = await DBH.select_not_null('mysql');
@@ -59,7 +63,7 @@ function modbus_output(){
         }
         socket.on('connect', function () {
             value = target.ctrlvalue*target.scale + target.offset//multi 이면 list , single이면 그냥 단일 value
-            console.log(value)
+            // console.log(value)
             switch (target.dattype) {
                 case 0://unsigned int 16bit AB
                     buf = Buffer.alloc(2)
@@ -127,6 +131,7 @@ function modbus_output(){
                     }
             }
             console.log(buf)
+            //주소처리 다시 확인해야 함
             switch (target.func){
                 case 5://write single coil
                     func = client.writeSingleCoil(target.address,buf)
@@ -157,3 +162,4 @@ function modbus_output(){
     }
     
 }
+

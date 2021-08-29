@@ -26,6 +26,7 @@
         <b-col>
           <b-button size="sm" variant="outline-secondary"
               v-on:click="restartFunction()">RESTART</b-button>
+          &nbsp;
           <b-button size="sm" variant="outline-secondary"
               v-on:click="stopFunction()">STOP</b-button>
         </b-col>
@@ -112,10 +113,8 @@ export default {
     log_check(){
        this.$http.get("/api/settings/module_log_check/"+this.selected+"/"+this.console_selected).then((response) => {
           console.log(response.data);
-          console.log("이거 제대로 되냐? ");
           console.log(this.logFile);
           this.logFile = response.data.replace(/\n/g, '<br />');
-          console.log("testseet",this.logFile);
         })
         .catch((error) => {
           if(error){

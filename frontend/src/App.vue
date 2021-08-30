@@ -6,26 +6,45 @@
             <img src="https://placekitten.com/g/30/30" class="d-inline-block align-top" alt="Kitten">
             4m-Bems
             </b-navbar-brand>
+            <div>
+                <b-img height="30px" src="https://lh3.googleusercontent.com/proxy/GxKB766IoJSur3ddLX25NfloAol2BPjd3puoRgC767MldyGa6rIRc1H8-2hx0VZiCyHff48yiTdQNE8D0NT0sM9izkXPTeIRKTGSQBw"  alt="Responsive image"></b-img>
+            </div>
         </b-navbar>
         <b-container fluid class="m-0 p-0">
             <b-row class="">
                 <b-col cols="2" class="p-0">
                     <b-nav vertical class="vh-100 ">
                         <v-list color="transparent p-0">
-                            <v-list-item 
+                            <div
                             v-for="item in side" 
                             :key="item.text"
+                            @mouseover="item.drop = true" 
+                            @mouseleave="item.drop = false">
+                                <v-list-item 
                                 link router :to="{name: item.router}">
-                                <v-list-item-icon>
-                                    <v-icon v-text="item.icon"></v-icon>
-                                </v-list-item-icon>
-                                <v-list-item-content>
-                                    <v-list-item-title>
-                                        {{ item.text }}
-                                    </v-list-item-title>
-                                </v-list-item-content>
-                            </v-list-item>
-
+                                    <v-list-item-icon>
+                                        <v-icon v-text="item.icon"></v-icon>
+                                    </v-list-item-icon>
+                                    <v-list-item-content>
+                                        <v-list-item-title>
+                                            {{ item.text }}
+                                        </v-list-item-title>
+                                    </v-list-item-content>
+                                </v-list-item>
+                                <div
+                                v-show="item.drop">
+                                <v-list-item
+                                v-for="sub in item.subPages" 
+                                :key="sub.text"
+                                 link router :to="{name: sub.router}">
+                                    <v-list-item-content>
+                                        <v-list-item-title>
+                                            {{ sub.text }}
+                                        </v-list-item-title>
+                                    </v-list-item-content>
+                                </v-list-item>
+                                </div>
+                            </div>
                             <v-divider class="my-2"></v-divider>
 
                             <v-list-item link 
@@ -49,98 +68,81 @@
                 </b-col>
             </b-row>
         </b-container>
-        
-        <!-- <b-sidebar class="fixed" id="sidebar-1" title="Sidebar" shadow>
-        <div class="px-3 py-2">
-            <p>
-            Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis
-            in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-            </p>
-            <b-img src="https://picsum.photos/500/500/?image=54" fluid thumbnail></b-img>
-        </div>
-        </b-sidebar> -->
-
     </div>
 </template>
-    <!-- <v-app id="inspire">
-        <v-app-bar app color="white" flat>
-            <v-container class="py-0 fill-height">
-                <v-avatar class="mr-10" color="grey darken-1" size="32"></v-avatar>
-                <v-toolbar-title>4Msys Monitoring System</v-toolbar-title>
-                <v-btn v-for="link in links" :key="link" text>
-                    {{ link.text }}
-                </v-btn>
-                <v-responsive max-width="260">
-                    <v-text-field dense flat hide-details rounded solo-inverted></v-text-field>
-                </v-responsive>
-            </v-container>
-        </v-app-bar>
-        <v-main class="grey lighten-3">
-            <v-container>
-                <v-row>
-                    <v-col cols="2">
-                        <v-sheet rounded="lg">
-                            <v-list color="transparent">
-                                <v-list-item 
-                                v-for="item in side" 
-                                :key="item.text"
-                                 link router :to="{name: item.router}">
-                                    <v-list-item-icon>
-                                        <v-icon v-text="item.icon"></v-icon>
-                                    </v-list-item-icon>
-                                    <v-list-item-content>
-                                        <v-list-item-title>
-                                            {{ item.text }}
-                                        </v-list-item-title>
-                                    </v-list-item-content>
-                                </v-list-item>
-    
-                                <v-divider class="my-2"></v-divider>
-    
-                                <v-list-item link 
-                                router :to="{name: setting[0].router}">
-                                    <v-list-item-icon >
-                                        <v-icon v-text="setting[0].icon"></v-icon>
-                                    </v-list-item-icon>
-                                    <v-list-item-content>
-                                        <v-list-item-title>
-                                            {{setting[0].text}}
-                                        </v-list-item-title>
-                                    </v-list-item-content>
-                                </v-list-item>
-                            </v-list>
-                        </v-sheet>
-                    </v-col>
-    
-                    <v-col>
-                        <v-sheet min-height="70vh" rounded="lg">
-                        메인 -->
-                        <!-- <router-view/>
-                        </v-sheet>
-                    </v-col>
-                </v-row>
-            </v-container>
-        </v-main>
-    </v-app> --> 
+
 
 <script>
 export default {
+    methods: {
+      onOver() {
+        this.$refs.dropdown1.visible = true;
+      },
+      onLeave() {
+        this.$refs.dropdown1.visible = false;
+      }
+    },
     data: () => ({
+        drop : true,
         links: [
             { text: 'Dashboard', router: 'Home' },
 
         ],
         side: [
-            { text: '홈', router: 'Home', icon: 'mdi-home' },
-            { text: '온도', router: 'Temperate', icon: 'mdi-thermometer' },
-            { text: '습도', router: 'Humid', icon: 'mdi-water-percent' },
-            { text: '화재', router: 'Fire', icon: 'mdi-fire' },
-            { text: '조명', router: 'Light', icon: 'mdi-lightbulb' },
-            { text: '전력', router: 'ElecticPower', icon: 'mdi-flash' },
-            { text: '수도', router: 'Water', icon: 'mdi-water-pump' },
-            { text: 'pm', router: 'Pm', icon: 'mdi-dots-hexagon' },
-            { text: '미세먼지', router: 'Dust', icon: 'mdi-dots-hexagon' },
-            { text: '이산화탄소', router: 'Co2', icon: 'mdi-molecule-co2' },
+            { text: '종합보기', router: 'Home', icon: 'mdi-home', drop : false, subPages: [
+                {text : '건물 에너지 사용현황', router : '#'},
+                {text : '종합 운전 현황', router : '#'},
+                {text : '사용자 분할화면', router : '#'}
+            ] },
+            { text: '에너지 사용', router: 'Temperate', icon: 'mdi-thermometer' , drop : false, subPages: [
+                {text : '전체에너지(총량)', router : '#'},
+                {text : '전력에너지(전체)', router : '#'},
+                {text : '전력에너지(구역)', router : '#'},
+                {text : '가스에너지', router : '#'},
+                {text : '계량기관리', router : '#'}
+            ]},
+            { text: '에너지 분석', router: 'Humid', icon: 'mdi-water-percent', drop : false, subPages: [
+                {text : '에너지 사용분석', router : '#'},
+                {text : '에너지 절감분석', router : '#'}
+            ] },
+            { text: '에너지 제어', router: 'Fire', icon: 'mdi-fire', drop : false, subPages: [
+                {text : '최적운전제어', router : '#'},
+                {text : '설비예측제어', router : '#'},
+                {text : '전력예측제어', router : '#'}
+            ] },
+            { text: '에너지 로직', router: 'Light', icon: 'mdi-lightbulb', drop : false, subPages: [
+                {text : '?', router : '#'}
+            ] },
+            { text: '성능진단', router: 'ElecticPower', icon: 'mdi-flash', drop : false, subPages: [
+                {text : '시스템', router : '#'},
+                {text : '흡수식냉온수기', router : '#'},
+                {text : '터보냉동기', router : '#'},
+                {text : '냉각탑', router : '#'},
+                {text : '펌프', router : '#'},
+                {text : '공조기', router : '#'},
+                {text : '전력', router : '#'}
+            ] },
+            { text: '설비관리', router: 'Water', icon: 'mdi-water-pump', drop : false, subPages: [
+                {text : '1', router : '#'},
+                {text : '2', router : '#'},
+                {text : '3', router : '#'}
+            ] },
+            { text: '실시간관리', router: 'Pm', icon: 'mdi-dots-hexagon', drop : false, subPages: [
+                {text : '1', router : '#'},
+                {text : '2', router : '#'},
+                {text : '3', router : '#'}
+            ] },
+            { text: '이력관리', router: 'Dust', icon: 'mdi-dots-hexagon', drop : false, subPages: [
+                {text : '데이터이력', router : '#'},
+                {text : '프로젝트이력', router : '#'},
+                {text : '시뮬레이션 이력', router : '#'},
+                {text : '로그 이력', router : '#'}
+            ] },
+            { text: '시스템관리', router: 'Co2', icon: 'mdi-molecule-co2', drop : false, subPages: [
+                {text : '너무 많음..', router : '#'},
+                {text : '2', router : '#'},
+                {text : '3', router : '#'}
+            ] },
         ],
         setting: [
             { text: '환경설정', router: 'Admin', icon: 'mdi-cog-outline' },

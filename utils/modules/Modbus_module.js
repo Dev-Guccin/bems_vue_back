@@ -341,7 +341,7 @@ function response_process(targetchannels_fi, resp) {
                 case 14://14 : 1bit value
                     //이부분 맞는지 확인 필요
                     console.log('modbus_result : ', modbus_result)
-                    if (targetchannels[fi].function_code == 3 || targetchannels_fi.function_code == 4) { //아날로그로 읽는 경우
+                    if (targetchannels_fi.function_code == 3 || targetchannels_fi.function_code == 4) { //아날로그로 읽는 경우
                         if (modbus_result.readInt16BE(targetIdx) & (1 << (15 - sensors[se].m_offsetbit))) {
                             resData = 1
                         } else { resData = 0 }

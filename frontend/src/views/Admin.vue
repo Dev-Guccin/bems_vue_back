@@ -6,10 +6,22 @@
         <b-col cols=8>
         <b-card>
           <div class="text-center">
-            <b-spinner v-if="modbus_working == 1" variant="success" small></b-spinner><b-icon v-if="modbus_working==0" icon="exclamation-circle"></b-icon><span>MODBUS</span>&nbsp;
-            <b-spinner v-if="bacnet_working == 1" variant="success" small></b-spinner><b-icon v-if="bacnet_working==0" icon="exclamation-circle"></b-icon><span>BACNET</span>&nbsp;
-            <b-spinner v-if="database_working == 1" variant="success" small></b-spinner><b-icon v-if="database_working==0" icon="exclamation-circle"></b-icon><span>DATABASE</span>&nbsp;
-            <b-spinner v-if="batch_working==1" variant="success" small></b-spinner><b-icon v-if="batch_working==0" icon="exclamation-circle"></b-icon><span>BATCH</span>&nbsp;
+            <b-spinner v-if="modbus_working == 1" variant="success" small></b-spinner>
+            <b-icon v-if="modbus_working==0" icon="exclamation-circle"></b-icon>
+            <b-icon v-if="modbus_working==2" color='red' icon="exclamation-circle"></b-icon>
+            <span>MODBUS</span>&nbsp;
+            <b-spinner v-if="bacnet_working == 1" variant="success" small></b-spinner>
+            <b-icon v-if="bacnet_working==0" icon="exclamation-circle"></b-icon>
+            <b-icon v-if="bacnet_working==2" color='red' icon="exclamation-circle"></b-icon>
+            <span>BACNET</span>&nbsp;
+            <b-spinner v-if="database_working == 1" variant="success" small></b-spinner>
+            <b-icon v-if="database_working==0" icon="exclamation-circle"></b-icon>
+            <b-icon v-if="database_working==2" color='red' icon="exclamation-circle"></b-icon>
+            <span>DATABASE</span>&nbsp;
+            <b-spinner v-if="batch_working==1" variant="success" small></b-spinner>
+            <b-icon v-if="batch_working==0" icon="exclamation-circle"></b-icon>
+            <b-icon v-if="batch_working==2" color='red' icon="exclamation-circle"></b-icon>
+            <span>BATCH</span>&nbsp;
           </div>
         </b-card>
         </b-col>
@@ -108,16 +120,18 @@ export default {
   },
   methods: {
     restartFunction(){
-      this.$http.get("/api/settings/restart_only/"+this.selected).then(function(response) {
+      this.$http.get("/api/settings/restart_only/"+this.selected).then((response) =>{
           console.log(response);
+          this.checkFunction();
         })
         .catch(function(error) {
           console.log(error);
         });
     },
     stopFunction(){
-      this.$http.get("/api/settings/stop_only/"+this.selected).then(function(response) {
+      this.$http.get("/api/settings/stop_only/"+this.selected).then((response) =>{
           console.log(response);
+          this.checkFunction();
         })
         .catch(function(error) {
           console.log(error);
@@ -130,18 +144,26 @@ export default {
           // 정제하기
           if(this.module_check.modbus == "online")
             this.modbus_working = 1;
+          else if(this.module_check.modbus == "stopped")
+            this.modbus_working = 2;
           else
             this.modbus_working = 0;
           if(this.module_check.bacnet == "online")
             this.bacnet_working = 1;
+          else if(this.module_check.bacnet == "stopped")
+            this.bacnet_working = 2;
           else
             this.bacnet_working = 0;
           if(this.module_check.database == "online")
             this.database_working = 1;
+          else if(this.module_check.databse == "stopped")
+            this.database_working = 2;
           else
             this.database_working = 0;
           if(this.module_check.batch == "online")
             this.batch_working = 1;
+          else if(this.module_check.database == "stopped")
+            this.batch_working = 2;
           else
             this.batch_working = 0;
         })

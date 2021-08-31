@@ -216,8 +216,8 @@ let Handler = {
                         if(checklist[element.name]!=undefined){
                             if(element.pm2_env.status == 'online')
                                 checklist[element.name]='online'
-                            else if(element.pm2_env.status == 'stop')
-                                checklist[element.name]='stop'
+                            else if(element.pm2_env.status == 'stopped')
+                                checklist[element.name]='stopped'
                         }
                     });
                     console.log(checklist)

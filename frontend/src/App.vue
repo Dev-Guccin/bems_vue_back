@@ -7,7 +7,7 @@
             4m-Bems
             </b-navbar-brand>
             <div>
-                <b-img height="30px" src="https://lh3.googleusercontent.com/proxy/GxKB766IoJSur3ddLX25NfloAol2BPjd3puoRgC767MldyGa6rIRc1H8-2hx0VZiCyHff48yiTdQNE8D0NT0sM9izkXPTeIRKTGSQBw"  alt="Responsive image"></b-img>
+                <b-spinner variant="success"></b-spinner>
             </div>
         </b-navbar>
         <b-container fluid class="m-0 p-0">

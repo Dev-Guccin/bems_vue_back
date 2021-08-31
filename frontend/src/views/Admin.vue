@@ -3,9 +3,14 @@
     <b-container 
       class="px-0 mx-auto">
       <b-row>
-        <b-col>
+        <b-col cols=8>
         <b-card>
-          modbus: , bacnet, database
+          <div class="text-center">
+            <b-spinner v-if="modbus_working == 1" variant="success" small></b-spinner><b-icon v-if="modbus_working==0" icon="exclamation-circle"></b-icon><span>MODBUS</span>&nbsp;
+            <b-spinner v-if="bacnet_working == 1" variant="success" small></b-spinner><b-icon v-if="bacnet_working==0" icon="exclamation-circle"></b-icon><span>BACNET</span>&nbsp;
+            <b-spinner v-if="database_working == 1" variant="success" small></b-spinner><b-icon v-if="database_working==0" icon="exclamation-circle"></b-icon><span>DATABASE</span>&nbsp;
+            <b-spinner v-if="batch_working==1" variant="success" small></b-spinner><b-icon v-if="batch_working==0" icon="exclamation-circle"></b-icon><span>BATCH</span>&nbsp;
+          </div>
         </b-card>
         </b-col>
         <b-col>
@@ -72,6 +77,11 @@
 export default {
   data() {
     return {
+      modbus_working:0,
+      bacnet_working:0,
+      database_working:0,
+      batch_working:0,
+      module_check: "",
       logFile: "Click check button",
       moduleSelected:"modbus",
       selected: "modbus",
@@ -114,8 +124,26 @@ export default {
         });
     },
     checkFunction(){
-      this.$http.get("/api/settings/module_check").then(function(response) {
+      this.$http.get("/api/settings/module_check").then((response) => {
           console.log(response);
+          this.module_check = response.data
+          // 정제하기
+          if(this.module_check.modbus == "online")
+            this.modbus_working = 1;
+          else
+            this.modbus_working = 0;
+          if(this.module_check.bacnet == "online")
+            this.bacnet_working = 1;
+          else
+            this.bacnet_working = 0;
+          if(this.module_check.database == "online")
+            this.database_working = 1;
+          else
+            this.database_working = 0;
+          if(this.module_check.batch == "online")
+            this.batch_working = 1;
+          else
+            this.batch_working = 0;
         })
         .catch(function(error) {
           console.log(error);
@@ -137,7 +165,6 @@ export default {
       window.scrollTo(0,0)
     },
     scroll_down(){
-      this.$el.querySelector("containser")
       var container = this.$el.querySelector(".container");
       window.scrollTo(0,container.scrollHeight);
     },

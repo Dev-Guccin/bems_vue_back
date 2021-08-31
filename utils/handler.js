@@ -212,7 +212,6 @@ let Handler = {
                 pm2.list((err, list) => {
                     let checklist = {'modbus':'', 'bacnet':'', 'database':'', 'batch':''};
                     list.forEach(element => {
-                        console.log(element.name, element.pm2_env.status)
                         if(checklist[element.name]!=undefined){
                             if(element.pm2_env.status == 'online')
                                 checklist[element.name]='online'

@@ -58,6 +58,12 @@
       </b-card>
       </b-row>
     </b-container>
+      <div v-bind:style="up_btn_style">
+        <b-button
+          bottom right fixed v-on:click="scroll_up()"><b-icon icon='arrow-up-square'></b-icon></b-button><br>
+        <b-button
+          bottom right fixed v-on:click="scroll_down()"><b-icon icon='arrow-down-circle'></b-icon></b-button>
+      </div>
   </div>
 </template>
 
@@ -79,7 +85,12 @@ export default {
       console_options:[
         { value: "out", text:"output"},
         { value: "err", text:"error"}
-      ]
+      ],
+      up_btn_style:{
+        position:"fixed",
+        bottom:"10px",
+        right:"10px",
+      }
     };
   },
   components: {
@@ -121,7 +132,16 @@ export default {
             console.log(error);
           }
       });
-    }
+    },
+    scroll_up(){
+      window.scrollTo(0,0)
+    },
+    scroll_down(){
+      this.$el.querySelector("containser")
+      var container = this.$el.querySelector(".container");
+      window.scrollTo(0,container.scrollHeight);
+    },
+    
   }
 }
 </script>

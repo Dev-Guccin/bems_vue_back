@@ -1,0 +1,379 @@
+get_excel완료
+info 완료
+Detail {
+  object_name: '4MSYS 화재',
+  object_type: 'AI',
+  m_addr: 0,
+  m_w_addr: 0,
+  id: 1,
+  units: 'Bar',
+  low_limit: '0',
+  high_limit: '999999999',
+  m_enable: 1,
+  m_ip: 1,
+  m_channel: 1,
+  m_func: 3,
+  m_offsetbit: 0,
+  m_dattype: 1,
+  m_r_scale: 1,
+  m_r_offset: 0,
+  m_w_ip: 1,
+  m_w_id: 0,
+  m_w_fc: 5,
+  m_w_dattype: 0,
+  m_w_scale: 1,
+  m_w_offset: 0
+}
+Detail {
+  object_name: '4MSYS 온도',
+  object_type: 'AI',
+  m_addr: 1,
+  m_w_addr: 1,
+  id: 2,
+  units: 'Bar',
+  low_limit: '0',
+  high_limit: '999999999',
+  m_enable: 1,
+  m_ip: 1,
+  m_channel: 1,
+  m_func: 3,
+  m_offsetbit: 0,
+  m_dattype: 1,
+  m_r_scale: 1,
+  m_r_offset: 0,
+  m_w_ip: 1,
+  m_w_id: 0,
+  m_w_fc: 5,
+  m_w_dattype: 0,
+  m_w_scale: 1,
+  m_w_offset: 0
+}
+Detail {
+  object_name: '4MSYS 습도',
+  object_type: 'AI',
+  m_addr: 2,
+  m_w_addr: 2,
+  id: 3,
+  units: 'Bar',
+  low_limit: '0',
+  high_limit: '999999999',
+  m_enable: 1,
+  m_ip: 1,
+  m_channel: 1,
+  m_func: 3,
+  m_offsetbit: 0,
+  m_dattype: 1,
+  m_r_scale: 1,
+  m_r_offset: 0,
+  m_w_ip: 1,
+  m_w_id: 0,
+  m_w_fc: 5,
+  m_w_dattype: 1,
+  m_w_scale: 1,
+  m_w_offset: 0
+}
+Detail {
+  object_name: '4MSYS pm10',
+  object_type: 'AI',
+  m_addr: 3,
+  m_w_addr: 3,
+  id: 4,
+  units: 'Bar',
+  low_limit: '0',
+  high_limit: '999999999',
+  m_enable: 1,
+  m_ip: 1,
+  m_channel: 1,
+  m_func: 3,
+  m_offsetbit: 0,
+  m_dattype: 1,
+  m_r_scale: 1,
+  m_r_offset: 0,
+  m_w_ip: 1,
+  m_w_id: 0,
+  m_w_fc: 5,
+  m_w_dattype: 1,
+  m_w_scale: 1,
+  m_w_offset: 0
+}
+Detail {
+  object_name: '4MSYS pm2.5',
+  object_type: 'AI',
+  m_addr: 4,
+  m_w_addr: 4,
+  id: 5,
+  units: 'Bar',
+  low_limit: '0',
+  high_limit: '999999999',
+  m_enable: 1,
+  m_ip: 1,
+  m_channel: 1,
+  m_func: 3,
+  m_offsetbit: 0,
+  m_dattype: 1,
+  m_r_scale: 1,
+  m_r_offset: 0,
+  m_w_ip: 1,
+  m_w_id: 0,
+  m_w_fc: 5,
+  m_w_dattype: 2,
+  m_w_scale: 1,
+  m_w_offset: 0
+}
+Detail {
+  object_name: '4MSYS co2',
+  object_type: 'AI',
+  m_addr: 5,
+  m_w_addr: 5,
+  id: 6,
+  units: 'Bar',
+  low_limit: '0',
+  high_limit: '999999999',
+  m_enable: 1,
+  m_ip: 1,
+  m_channel: 1,
+  m_func: 3,
+  m_offsetbit: 0,
+  m_dattype: 1,
+  m_r_scale: 1,
+  m_r_offset: 0,
+  m_w_ip: 1,
+  m_w_id: 0,
+  m_w_fc: 5,
+  m_w_dattype: 2,
+  m_w_scale: 1,
+  m_w_offset: 0
+}
+Detail {
+  object_name: '4MSYS o2',
+  object_type: 'AI',
+  m_addr: 6,
+  m_w_addr: 6,
+  id: 7,
+  units: 'Bar',
+  low_limit: '0',
+  high_limit: '999999999',
+  m_enable: 1,
+  m_ip: 1,
+  m_channel: 1,
+  m_func: 3,
+  m_offsetbit: 0,
+  m_dattype: 1,
+  m_r_scale: 1,
+  m_r_offset: 0,
+  m_w_ip: 1,
+  m_w_id: 0,
+  m_w_fc: 5,
+  m_w_dattype: 3,
+  m_w_scale: 1,
+  m_w_offset: 0
+}
+Detail {
+  object_name: '4MSYS 동작감지',
+  object_type: 'AI',
+  m_addr: 7,
+  m_w_addr: 7,
+  id: 8,
+  units: 'Bar',
+  low_limit: '0',
+  high_limit: '999999999',
+  m_enable: 1,
+  m_ip: 1,
+  m_channel: 1,
+  m_func: 3,
+  m_offsetbit: 0,
+  m_dattype: 1,
+  m_r_scale: 1,
+  m_r_offset: 0,
+  m_w_ip: 1,
+  m_w_id: 0,
+  m_w_fc: 5,
+  m_w_dattype: 3,
+  m_w_scale: 1,
+  m_w_offset: 0
+}
+excel 정합성ok
+start 통신
+connected!!!! 192.168.219.101
+targetFrame!!! [
+  Channel {
+    id: 1,
+    fr_name: '센서1',
+    channel_id: 1,
+    function_code: 3,
+    device_address: 1,
+    start_address: 0,
+    read_byte: 9,
+    active: 1
+  }
+]
+<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
+set read: 0 9
+resData: 1 (id: 1 )
+resData: 2 (id: 2 )
+resData: 3 (id: 3 )
+resData: 4 (id: 4 )
+resData: 5 (id: 5 )
+resData: 6 (id: 6 )
+resData: 7 (id: 7 )
+resData: 8 (id: 8 )
+<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
+set read: 0 9
+resData: 1 (id: 1 )
+resData: 2 (id: 2 )
+resData: 3 (id: 3 )
+resData: 4 (id: 4 )
+resData: 5 (id: 5 )
+resData: 6 (id: 6 )
+resData: 7 (id: 7 )
+resData: 8 (id: 8 )
+<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
+set read: 0 9
+resData: 1 (id: 1 )
+resData: 2 (id: 2 )
+resData: 3 (id: 3 )
+resData: 4 (id: 4 )
+resData: 5 (id: 5 )
+resData: 6 (id: 6 )
+resData: 7 (id: 7 )
+resData: 8 (id: 8 )
+<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
+set read: 0 9
+resData: 1 (id: 1 )
+resData: 2 (id: 2 )
+resData: 3 (id: 3 )
+resData: 4 (id: 4 )
+resData: 5 (id: 5 )
+resData: 6 (id: 6 )
+resData: 7 (id: 7 )
+resData: 8 (id: 8 )
+<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
+set read: 0 9
+resData: 1 (id: 1 )
+resData: 2 (id: 2 )
+resData: 3 (id: 3 )
+resData: 4 (id: 4 )
+resData: 5 (id: 5 )
+resData: 6 (id: 6 )
+resData: 7 (id: 7 )
+resData: 8 (id: 8 )
+<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
+set read: 0 9
+resData: 1 (id: 1 )
+resData: 2 (id: 2 )
+resData: 3 (id: 3 )
+resData: 4 (id: 4 )
+resData: 5 (id: 5 )
+resData: 6 (id: 6 )
+resData: 7 (id: 7 )
+resData: 8 (id: 8 )
+<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
+set read: 0 9
+resData: 1 (id: 1 )
+resData: 2 (id: 2 )
+resData: 3 (id: 3 )
+resData: 4 (id: 4 )
+resData: 5 (id: 5 )
+resData: 6 (id: 6 )
+resData: 7 (id: 7 )
+resData: 8 (id: 8 )
+<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
+set read: 0 9
+resData: 1 (id: 1 )
+resData: 2 (id: 2 )
+resData: 3 (id: 3 )
+resData: 4 (id: 4 )
+resData: 5 (id: 5 )
+resData: 6 (id: 6 )
+resData: 7 (id: 7 )
+resData: 8 (id: 8 )
+<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
+set read: 0 9
+resData: 1 (id: 1 )
+resData: 2 (id: 2 )
+resData: 3 (id: 3 )
+resData: 4 (id: 4 )
+resData: 5 (id: 5 )
+resData: 6 (id: 6 )
+resData: 7 (id: 7 )
+resData: 8 (id: 8 )
+<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
+set read: 0 9
+resData: 1 (id: 1 )
+resData: 2 (id: 2 )
+resData: 3 (id: 3 )
+resData: 4 (id: 4 )
+resData: 5 (id: 5 )
+resData: 6 (id: 6 )
+resData: 7 (id: 7 )
+resData: 8 (id: 8 )
+<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
+set read: 0 9
+resData: 1 (id: 1 )
+resData: 2 (id: 2 )
+resData: 3 (id: 3 )
+resData: 4 (id: 4 )
+resData: 5 (id: 5 )
+resData: 6 (id: 6 )
+resData: 7 (id: 7 )
+resData: 8 (id: 8 )
+<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
+set read: 0 9
+resData: 1 (id: 1 )
+resData: 2 (id: 2 )
+resData: 3 (id: 3 )
+resData: 4 (id: 4 )
+resData: 5 (id: 5 )
+resData: 6 (id: 6 )
+resData: 7 (id: 7 )
+resData: 8 (id: 8 )
+<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
+set read: 0 9
+resData: 1 (id: 1 )
+resData: 2 (id: 2 )
+resData: 3 (id: 3 )
+resData: 4 (id: 4 )
+resData: 5 (id: 5 )
+resData: 6 (id: 6 )
+resData: 7 (id: 7 )
+resData: 8 (id: 8 )
+<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
+set read: 0 9
+resData: 1 (id: 1 )
+resData: 2 (id: 2 )
+resData: 3 (id: 3 )
+resData: 4 (id: 4 )
+resData: 5 (id: 5 )
+resData: 6 (id: 6 )
+resData: 7 (id: 7 )
+resData: 8 (id: 8 )
+<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
+set read: 0 9
+resData: 1 (id: 1 )
+resData: 2 (id: 2 )
+resData: 3 (id: 3 )
+resData: 4 (id: 4 )
+resData: 5 (id: 5 )
+resData: 6 (id: 6 )
+resData: 7 (id: 7 )
+resData: 8 (id: 8 )
+<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
+set read: 0 9
+resData: 1 (id: 1 )
+resData: 2 (id: 2 )
+resData: 3 (id: 3 )
+resData: 4 (id: 4 )
+resData: 5 (id: 5 )
+resData: 6 (id: 6 )
+resData: 7 (id: 7 )
+resData: 8 (id: 8 )
+<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
+set read: 0 9
+resData: 1 (id: 1 )
+resData: 2 (id: 2 )
+resData: 3 (id: 3 )
+resData: 4 (id: 4 )
+resData: 5 (id: 5 )
+resData: 6 (id: 6 )
+resData: 7 (id: 7 )
+resData: 8 (id: 8 )

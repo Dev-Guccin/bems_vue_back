@@ -269,11 +269,11 @@ function response_process(targetchannels_fi, resp) {
     DBH.channel_inc_rx(targetchannels_fi.id)
     let se, sensors, targetIdx, resData
     modbus_result = resp.response._body._valuesAsBuffer
-    console.log(modbus_result, Buffer.byteLength(modbus_result, 'utf8'), targetchannels_fi.read_byte)
+    //console.log(modbus_result, Buffer.byteLength(modbus_result, 'utf8'), targetchannels_fi.read_byte)
     //이제 여기서 데이터를 정규화 하는 작업 해야함
     sensors = Details[targetchannels_fi.id]//detail객체
     if (sensors === undefined || sensors.length == 0) return //Detail이 정의되어 있지 않은 경우 연산없이 넘긴다.
-    console.log("set read:", targetchannels_fi.start_address, targetchannels_fi.read_byte)
+    //console.log("set read:", targetchannels_fi.start_address, targetchannels_fi.read_byte)
     for (se = 0; se < sensors.length; se++) {
         if (sensors[se].m_enable == 0) continue
         try {
@@ -341,7 +341,7 @@ function response_process(targetchannels_fi, resp) {
                 case 14://14 : 1bit value
                     //이부분 맞는지 확인 필요
                     console.log('modbus_result : ', modbus_result)
-                    if (targetchannels[fi].function_code == 3 || targetchannels_fi.function_code == 4) { //아날로그로 읽는 경우
+                    if (targetchannels_fi.function_code == 3 || targetchannels_fi.function_code == 4) { //아날로그로 읽는 경우
                         if (modbus_result.readInt16BE(targetIdx) & (1 << (15 - sensors[se].m_offsetbit))) {
                             resData = 1
                         } else { resData = 0 }
@@ -357,7 +357,7 @@ function response_process(targetchannels_fi, resp) {
             resData = NaN //받는데이터가 요청한 데이터보다 짧을때 처리(na)
         }
         if (resData != NaN) {
-            console.log("resData:", resData, "(id:", sensors[se].id, ")")
+            //console.log("resData:", resData, "(id:", sensors[se].id, ")")
             DBH.realtime_upsert(sensors[se].id, sensors[se].object_name, sensors[se].m_r_scale * resData + sensors[se].m_r_offset, sensors[se].object_type)
         }
     }

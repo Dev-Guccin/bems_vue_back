@@ -3,9 +3,26 @@
     <b-container 
       class="px-0 mx-auto">
       <b-row>
-        <b-col>
+        <b-col cols=8>
         <b-card>
-          modbus: , bacnet, database
+          <div class="text-center">
+            <b-spinner v-if="modbus_working == 1" variant="success" small></b-spinner>
+            <b-icon v-if="modbus_working==0" icon="exclamation-circle"></b-icon>
+            <b-icon v-if="modbus_working==2" color='red' icon="exclamation-circle"></b-icon>
+            <span>MODBUS</span>&nbsp;
+            <b-spinner v-if="bacnet_working == 1" variant="success" small></b-spinner>
+            <b-icon v-if="bacnet_working==0" icon="exclamation-circle"></b-icon>
+            <b-icon v-if="bacnet_working==2" color='red' icon="exclamation-circle"></b-icon>
+            <span>BACNET</span>&nbsp;
+            <b-spinner v-if="database_working == 1" variant="success" small></b-spinner>
+            <b-icon v-if="database_working==0" icon="exclamation-circle"></b-icon>
+            <b-icon v-if="database_working==2" color='red' icon="exclamation-circle"></b-icon>
+            <span>DATABASE</span>&nbsp;
+            <b-spinner v-if="batch_working==1" variant="success" small></b-spinner>
+            <b-icon v-if="batch_working==0" icon="exclamation-circle"></b-icon>
+            <b-icon v-if="batch_working==2" color='red' icon="exclamation-circle"></b-icon>
+            <span>BATCH</span>&nbsp;
+          </div>
         </b-card>
         </b-col>
         <b-col>
@@ -58,6 +75,12 @@
       </b-card>
       </b-row>
     </b-container>
+      <div v-bind:style="up_btn_style">
+        <b-button
+          bottom right fixed v-on:click="scroll_up()"><b-icon icon='arrow-up-square'></b-icon></b-button><br>
+        <b-button
+          bottom right fixed v-on:click="scroll_down()"><b-icon icon='arrow-down-circle'></b-icon></b-button>
+      </div>
   </div>
 </template>
 
@@ -66,6 +89,11 @@
 export default {
   data() {
     return {
+      modbus_working:0,
+      bacnet_working:0,
+      database_working:0,
+      batch_working:0,
+      module_check: "",
       logFile: "Click check button",
       moduleSelected:"modbus",
       selected: "modbus",
@@ -79,7 +107,12 @@ export default {
       console_options:[
         { value: "out", text:"output"},
         { value: "err", text:"error"}
-      ]
+      ],
+      up_btn_style:{
+        position:"fixed",
+        bottom:"10px",
+        right:"10px",
+      }
     };
   },
   components: {
@@ -87,24 +120,52 @@ export default {
   },
   methods: {
     restartFunction(){
-      this.$http.get("/api/settings/restart_only/"+this.selected).then(function(response) {
+      this.$http.get("/api/settings/restart_only/"+this.selected).then((response) =>{
           console.log(response);
+          this.checkFunction();
         })
         .catch(function(error) {
           console.log(error);
         });
     },
     stopFunction(){
-      this.$http.get("/api/settings/stop_only/"+this.selected).then(function(response) {
+      this.$http.get("/api/settings/stop_only/"+this.selected).then((response) =>{
           console.log(response);
+          this.checkFunction();
         })
         .catch(function(error) {
           console.log(error);
         });
     },
     checkFunction(){
-      this.$http.get("/api/settings/module_check").then(function(response) {
+      this.$http.get("/api/settings/module_check").then((response) => {
           console.log(response);
+          this.module_check = response.data
+          // 정제하기
+          if(this.module_check.modbus == "online")
+            this.modbus_working = 1;
+          else if(this.module_check.modbus == "stopped")
+            this.modbus_working = 2;
+          else
+            this.modbus_working = 0;
+          if(this.module_check.bacnet == "online")
+            this.bacnet_working = 1;
+          else if(this.module_check.bacnet == "stopped")
+            this.bacnet_working = 2;
+          else
+            this.bacnet_working = 0;
+          if(this.module_check.database == "online")
+            this.database_working = 1;
+          else if(this.module_check.databse == "stopped")
+            this.database_working = 2;
+          else
+            this.database_working = 0;
+          if(this.module_check.batch == "online")
+            this.batch_working = 1;
+          else if(this.module_check.database == "stopped")
+            this.batch_working = 2;
+          else
+            this.batch_working = 0;
         })
         .catch(function(error) {
           console.log(error);
@@ -121,7 +182,15 @@ export default {
             console.log(error);
           }
       });
-    }
+    },
+    scroll_up(){
+      window.scrollTo(0,0)
+    },
+    scroll_down(){
+      var container = this.$el.querySelector(".container");
+      window.scrollTo(0,container.scrollHeight);
+    },
+    
   }
 }
 </script>

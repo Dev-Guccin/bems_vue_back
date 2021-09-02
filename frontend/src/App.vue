@@ -18,8 +18,7 @@
                             <div
                             v-for="item in side" 
                             :key="item.text"
-                            @mouseover="item.drop = true" 
-                            @mouseleave="item.drop = false">
+                            @click="item.drop=not(item.drop)">
                                 <v-list-item 
                                 link router :to="{name: item.router}">
                                     <v-list-item-icon>

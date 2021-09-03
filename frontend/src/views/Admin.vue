@@ -162,7 +162,7 @@ export default {
             this.database_working = 0;
           if(this.module_check.batch == "online")
             this.batch_working = 1;
-          else if(this.module_check.database == "stopped")
+          else if(this.module_check.batch == "stopped")
             this.batch_working = 2;
           else
             this.batch_working = 0;

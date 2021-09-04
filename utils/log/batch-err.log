@@ -1,0 +1,11 @@
+TypeError: Cannot read property 'push' of undefined
+    at C:\Users\ghks2\Bems\prac\backend\utils\modules\Batch_module.js:55:47
+    at Array.forEach (<anonymous>)
+    at C:\Users\ghks2\Bems\prac\backend\utils\modules\Batch_module.js:53:14
+    at Query.<anonymous> (C:\Users\ghks2\Bems\prac\backend\utils\modules\database.js:140:13)
+    at Query.<anonymous> (C:\Users\ghks2\Bems\prac\backend\node_modules\mysql\lib\Connection.js:526:10)
+    at Query._callback (C:\Users\ghks2\Bems\prac\backend\node_modules\mysql\lib\Connection.js:488:16)
+    at Query.Sequence.end (C:\Users\ghks2\Bems\prac\backend\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Query._handleFinalResultPacket (C:\Users\ghks2\Bems\prac\backend\node_modules\mysql\lib\protocol\sequences\Query.js:149:8)
+    at Query.EofPacket (C:\Users\ghks2\Bems\prac\backend\node_modules\mysql\lib\protocol\sequences\Query.js:133:8)
+    at Protocol._parsePacket (C:\Users\ghks2\Bems\prac\backend\node_modules\mysql\lib\protocol\Protocol.js:291:23)

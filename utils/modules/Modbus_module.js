@@ -2,9 +2,6 @@ const DBH = require('./database.js')
 const Modbus = require('jsmodbus')
 const SerialPort = require('serialport')
 const net = require('net')
-const { timeStamp } = require('console')
-const { stringify } = require('querystring')
-const { channel_inc_err } = require('./database.js')
 let Excel = require('./get_excel.js')
 const sockets = []
 const clients = []
@@ -91,7 +88,7 @@ function getInfo() {
         try {
             let rows = await DBH.device_select("modbus_ip")
             rows.forEach(row => {
-                tmp = new IP();
+                tmp = new IP()
                 tmp.id = row["id"]
                 tmp.ch_name = row["name"]
                 tmp.com_type = row["com_type"]
@@ -181,7 +178,9 @@ function modbusStart() {
                 let targetchannels = Channels[IPs[i].id]
                 console.log("targetFrame!!!", targetchannels)
                 setInterval(() => {
+                    console.log("SetInterval!")
                     for (let fi = 0; fi < targetchannels.length; fi++) {//frame의 개수만큼 반복하는 코드
+                        console.log("check:", fi)
                         if (targetchannels[fi].active == 1) { // active 상태일때만 반복시킴
                             // console.log("타켓을 보자", targetchannels[fi])
                             switch (targetchannels[fi].function_code) {

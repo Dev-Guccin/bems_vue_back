@@ -192,9 +192,129 @@ Detail {
   m_w_scale: 1,
   m_w_offset: 0
 }
+Detail {
+  object_name: '4MSYS 전력',
+  object_type: 'AI',
+  m_addr: 8,
+  m_w_addr: 8,
+  id: 9,
+  units: 'Bar',
+  low_limit: '0',
+  high_limit: '999999999',
+  m_enable: 1,
+  m_ip: 1,
+  m_channel: 1,
+  m_func: 3,
+  m_offsetbit: 0,
+  m_dattype: 1,
+  m_r_scale: 1,
+  m_r_offset: 0,
+  m_w_ip: 1,
+  m_w_id: 0,
+  m_w_fc: 5,
+  m_w_dattype: 4,
+  m_w_scale: 1,
+  m_w_offset: 0
+}
+Detail {
+  object_name: '4MSYS 수도',
+  object_type: 'AI',
+  m_addr: 9,
+  m_w_addr: 9,
+  id: 10,
+  units: 'Bar',
+  low_limit: '0',
+  high_limit: '999999999',
+  m_enable: 1,
+  m_ip: 1,
+  m_channel: 1,
+  m_func: 3,
+  m_offsetbit: 0,
+  m_dattype: 1,
+  m_r_scale: 1,
+  m_r_offset: 0,
+  m_w_ip: 1,
+  m_w_id: 0,
+  m_w_fc: 5,
+  m_w_dattype: 4,
+  m_w_scale: 1,
+  m_w_offset: 0
+}
+Detail {
+  object_name: '4MSYS 가스',
+  object_type: 'AI',
+  m_addr: 10,
+  m_w_addr: 10,
+  id: 11,
+  units: 'Bar',
+  low_limit: '0',
+  high_limit: '999999999',
+  m_enable: 1,
+  m_ip: 1,
+  m_channel: 1,
+  m_func: 3,
+  m_offsetbit: 0,
+  m_dattype: 1,
+  m_r_scale: 1,
+  m_r_offset: 0,
+  m_w_ip: 1,
+  m_w_id: 0,
+  m_w_fc: 5,
+  m_w_dattype: 10,
+  m_w_scale: 1,
+  m_w_offset: 0
+}
+Detail {
+  object_name: '4MSYS 난방',
+  object_type: 'AI',
+  m_addr: 11,
+  m_w_addr: 11,
+  id: 12,
+  units: 'Bar',
+  low_limit: '0',
+  high_limit: '999999999',
+  m_enable: 1,
+  m_ip: 1,
+  m_channel: 1,
+  m_func: 3,
+  m_offsetbit: 0,
+  m_dattype: 1,
+  m_r_scale: 1,
+  m_r_offset: 0,
+  m_w_ip: 1,
+  m_w_id: 0,
+  m_w_fc: 5,
+  m_w_dattype: 5,
+  m_w_scale: 1,
+  m_w_offset: 0
+}
+Detail {
+  object_name: '4MSYS 급탕',
+  object_type: 'AI',
+  m_addr: 12,
+  m_w_addr: 12,
+  id: 13,
+  units: 'Bar',
+  low_limit: '0',
+  high_limit: '999999999',
+  m_enable: 1,
+  m_ip: 1,
+  m_channel: 1,
+  m_func: 3,
+  m_offsetbit: 0,
+  m_dattype: 1,
+  m_r_scale: 1,
+  m_r_offset: 0,
+  m_w_ip: 1,
+  m_w_id: 0,
+  m_w_fc: 5,
+  m_w_dattype: 6,
+  m_w_scale: 1,
+  m_w_offset: 0
+}
 excel 정합성ok
 start 통신
-connected!!!! 192.168.219.101
+connected!!!! 192.168.0.41
 targetFrame!!! [
   Channel {
     id: 1,
@@ -203,807 +323,599 @@ targetFrame!!! [
     function_code: 3,
     device_address: 1,
     start_address: 0,
-    read_byte: 9,
+    read_byte: 18,
     active: 1
   }
 ]
-<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
-set read: 0 9
-resData: 1 (id: 1 )
-resData: 2 (id: 2 )
-resData: 3 (id: 3 )
-resData: 4 (id: 4 )
-resData: 5 (id: 5 )
-resData: 6 (id: 6 )
-resData: 7 (id: 7 )
-resData: 8 (id: 8 )
-<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
-set read: 0 9
-resData: 1 (id: 1 )
-resData: 2 (id: 2 )
-resData: 3 (id: 3 )
-resData: 4 (id: 4 )
-resData: 5 (id: 5 )
-resData: 6 (id: 6 )
-resData: 7 (id: 7 )
-resData: 8 (id: 8 )
-<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
-set read: 0 9
-resData: 1 (id: 1 )
-resData: 2 (id: 2 )
-resData: 3 (id: 3 )
-resData: 4 (id: 4 )
-resData: 5 (id: 5 )
-resData: 6 (id: 6 )
-resData: 7 (id: 7 )
-resData: 8 (id: 8 )
-<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
-set read: 0 9
-resData: 1 (id: 1 )
-resData: 2 (id: 2 )
-resData: 3 (id: 3 )
-resData: 4 (id: 4 )
-resData: 5 (id: 5 )
-resData: 6 (id: 6 )
-resData: 7 (id: 7 )
-resData: 8 (id: 8 )
-<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
-set read: 0 9
-resData: 1 (id: 1 )
-resData: 2 (id: 2 )
-resData: 3 (id: 3 )
-resData: 4 (id: 4 )
-resData: 5 (id: 5 )
-resData: 6 (id: 6 )
-resData: 7 (id: 7 )
-resData: 8 (id: 8 )
-<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
-set read: 0 9
-resData: 1 (id: 1 )
-resData: 2 (id: 2 )
-resData: 3 (id: 3 )
-resData: 4 (id: 4 )
-resData: 5 (id: 5 )
-resData: 6 (id: 6 )
-resData: 7 (id: 7 )
-resData: 8 (id: 8 )
-<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
-set read: 0 9
-resData: 1 (id: 1 )
-resData: 2 (id: 2 )
-resData: 3 (id: 3 )
-resData: 4 (id: 4 )
-resData: 5 (id: 5 )
-resData: 6 (id: 6 )
-resData: 7 (id: 7 )
-resData: 8 (id: 8 )
-<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
-set read: 0 9
-resData: 1 (id: 1 )
-resData: 2 (id: 2 )
-resData: 3 (id: 3 )
-resData: 4 (id: 4 )
-resData: 5 (id: 5 )
-resData: 6 (id: 6 )
-resData: 7 (id: 7 )
-resData: 8 (id: 8 )
-<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
-set read: 0 9
-resData: 1 (id: 1 )
-resData: 2 (id: 2 )
-resData: 3 (id: 3 )
-resData: 4 (id: 4 )
-resData: 5 (id: 5 )
-resData: 6 (id: 6 )
-resData: 7 (id: 7 )
-resData: 8 (id: 8 )
-<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
-set read: 0 9
-resData: 1 (id: 1 )
-resData: 2 (id: 2 )
-resData: 3 (id: 3 )
-resData: 4 (id: 4 )
-resData: 5 (id: 5 )
-resData: 6 (id: 6 )
-resData: 7 (id: 7 )
-resData: 8 (id: 8 )
-<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
-set read: 0 9
-resData: 1 (id: 1 )
-resData: 2 (id: 2 )
-resData: 3 (id: 3 )
-resData: 4 (id: 4 )
-resData: 5 (id: 5 )
-resData: 6 (id: 6 )
-resData: 7 (id: 7 )
-resData: 8 (id: 8 )
-<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
-set read: 0 9
-resData: 1 (id: 1 )
-resData: 2 (id: 2 )
-resData: 3 (id: 3 )
-resData: 4 (id: 4 )
-resData: 5 (id: 5 )
-resData: 6 (id: 6 )
-resData: 7 (id: 7 )
-resData: 8 (id: 8 )
-<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
-set read: 0 9
-resData: 1 (id: 1 )
-resData: 2 (id: 2 )
-resData: 3 (id: 3 )
-resData: 4 (id: 4 )
-resData: 5 (id: 5 )
-resData: 6 (id: 6 )
-resData: 7 (id: 7 )
-resData: 8 (id: 8 )
-<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
-set read: 0 9
-resData: 1 (id: 1 )
-resData: 2 (id: 2 )
-resData: 3 (id: 3 )
-resData: 4 (id: 4 )
-resData: 5 (id: 5 )
-resData: 6 (id: 6 )
-resData: 7 (id: 7 )
-resData: 8 (id: 8 )
-<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
-set read: 0 9
-resData: 1 (id: 1 )
-resData: 2 (id: 2 )
-resData: 3 (id: 3 )
-resData: 4 (id: 4 )
-resData: 5 (id: 5 )
-resData: 6 (id: 6 )
-resData: 7 (id: 7 )
-resData: 8 (id: 8 )
-<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
-set read: 0 9
-resData: 1 (id: 1 )
-resData: 2 (id: 2 )
-resData: 3 (id: 3 )
-resData: 4 (id: 4 )
-resData: 5 (id: 5 )
-resData: 6 (id: 6 )
-resData: 7 (id: 7 )
-resData: 8 (id: 8 )
-<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
-set read: 0 9
-resData: 1 (id: 1 )
-resData: 2 (id: 2 )
-resData: 3 (id: 3 )
-resData: 4 (id: 4 )
-resData: 5 (id: 5 )
-resData: 6 (id: 6 )
-resData: 7 (id: 7 )
-resData: 8 (id: 8 )
-<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
-set read: 0 9
-resData: 1 (id: 1 )
-resData: 2 (id: 2 )
-resData: 3 (id: 3 )
-resData: 4 (id: 4 )
-resData: 5 (id: 5 )
-resData: 6 (id: 6 )
-resData: 7 (id: 7 )
-resData: 8 (id: 8 )
-<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
-set read: 0 9
-resData: 1 (id: 1 )
-resData: 2 (id: 2 )
-resData: 3 (id: 3 )
-resData: 4 (id: 4 )
-resData: 5 (id: 5 )
-resData: 6 (id: 6 )
-resData: 7 (id: 7 )
-resData: 8 (id: 8 )
-<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
-set read: 0 9
-resData: 1 (id: 1 )
-resData: 2 (id: 2 )
-resData: 3 (id: 3 )
-resData: 4 (id: 4 )
-resData: 5 (id: 5 )
-resData: 6 (id: 6 )
-resData: 7 (id: 7 )
-resData: 8 (id: 8 )
-<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
-set read: 0 9
-resData: 1 (id: 1 )
-resData: 2 (id: 2 )
-resData: 3 (id: 3 )
-resData: 4 (id: 4 )
-resData: 5 (id: 5 )
-resData: 6 (id: 6 )
-resData: 7 (id: 7 )
-resData: 8 (id: 8 )
-<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
-set read: 0 9
-resData: 1 (id: 1 )
-resData: 2 (id: 2 )
-resData: 3 (id: 3 )
-resData: 4 (id: 4 )
-resData: 5 (id: 5 )
-resData: 6 (id: 6 )
-resData: 7 (id: 7 )
-resData: 8 (id: 8 )
-<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
-set read: 0 9
-resData: 1 (id: 1 )
-resData: 2 (id: 2 )
-resData: 3 (id: 3 )
-resData: 4 (id: 4 )
-resData: 5 (id: 5 )
-resData: 6 (id: 6 )
-resData: 7 (id: 7 )
-resData: 8 (id: 8 )
-<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
-set read: 0 9
-resData: 1 (id: 1 )
-resData: 2 (id: 2 )
-resData: 3 (id: 3 )
-resData: 4 (id: 4 )
-resData: 5 (id: 5 )
-resData: 6 (id: 6 )
-resData: 7 (id: 7 )
-resData: 8 (id: 8 )
-<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
-set read: 0 9
-resData: 1 (id: 1 )
-resData: 2 (id: 2 )
-resData: 3 (id: 3 )
-resData: 4 (id: 4 )
-resData: 5 (id: 5 )
-resData: 6 (id: 6 )
-resData: 7 (id: 7 )
-resData: 8 (id: 8 )
-<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
-set read: 0 9
-resData: 1 (id: 1 )
-resData: 2 (id: 2 )
-resData: 3 (id: 3 )
-resData: 4 (id: 4 )
-resData: 5 (id: 5 )
-resData: 6 (id: 6 )
-resData: 7 (id: 7 )
-resData: 8 (id: 8 )
-<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
-set read: 0 9
-resData: 1 (id: 1 )
-resData: 2 (id: 2 )
-resData: 3 (id: 3 )
-resData: 4 (id: 4 )
-resData: 5 (id: 5 )
-resData: 6 (id: 6 )
-resData: 7 (id: 7 )
-resData: 8 (id: 8 )
-<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
-set read: 0 9
-resData: 1 (id: 1 )
-resData: 2 (id: 2 )
-resData: 3 (id: 3 )
-resData: 4 (id: 4 )
-resData: 5 (id: 5 )
-resData: 6 (id: 6 )
-resData: 7 (id: 7 )
-resData: 8 (id: 8 )
-<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
-set read: 0 9
-resData: 1 (id: 1 )
-resData: 2 (id: 2 )
-resData: 3 (id: 3 )
-resData: 4 (id: 4 )
-resData: 5 (id: 5 )
-resData: 6 (id: 6 )
-resData: 7 (id: 7 )
-resData: 8 (id: 8 )
-<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
-set read: 0 9
-resData: 1 (id: 1 )
-resData: 2 (id: 2 )
-resData: 3 (id: 3 )
-resData: 4 (id: 4 )
-resData: 5 (id: 5 )
-resData: 6 (id: 6 )
-resData: 7 (id: 7 )
-resData: 8 (id: 8 )
-<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
-set read: 0 9
-resData: 1 (id: 1 )
-resData: 2 (id: 2 )
-resData: 3 (id: 3 )
-resData: 4 (id: 4 )
-resData: 5 (id: 5 )
-resData: 6 (id: 6 )
-resData: 7 (id: 7 )
-resData: 8 (id: 8 )
-<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
-set read: 0 9
-resData: 1 (id: 1 )
-resData: 2 (id: 2 )
-resData: 3 (id: 3 )
-resData: 4 (id: 4 )
-resData: 5 (id: 5 )
-resData: 6 (id: 6 )
-resData: 7 (id: 7 )
-resData: 8 (id: 8 )
-<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
-set read: 0 9
-resData: 1 (id: 1 )
-resData: 2 (id: 2 )
-resData: 3 (id: 3 )
-resData: 4 (id: 4 )
-resData: 5 (id: 5 )
-resData: 6 (id: 6 )
-resData: 7 (id: 7 )
-resData: 8 (id: 8 )
-<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
-set read: 0 9
-resData: 1 (id: 1 )
-resData: 2 (id: 2 )
-resData: 3 (id: 3 )
-resData: 4 (id: 4 )
-resData: 5 (id: 5 )
-resData: 6 (id: 6 )
-resData: 7 (id: 7 )
-resData: 8 (id: 8 )
-<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
-set read: 0 9
-resData: 1 (id: 1 )
-resData: 2 (id: 2 )
-resData: 3 (id: 3 )
-resData: 4 (id: 4 )
-resData: 5 (id: 5 )
-resData: 6 (id: 6 )
-resData: 7 (id: 7 )
-resData: 8 (id: 8 )
-<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
-set read: 0 9
-resData: 1 (id: 1 )
-resData: 2 (id: 2 )
-resData: 3 (id: 3 )
-resData: 4 (id: 4 )
-resData: 5 (id: 5 )
-resData: 6 (id: 6 )
-resData: 7 (id: 7 )
-resData: 8 (id: 8 )
-<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
-set read: 0 9
-resData: 1 (id: 1 )
-resData: 2 (id: 2 )
-resData: 3 (id: 3 )
-resData: 4 (id: 4 )
-resData: 5 (id: 5 )
-resData: 6 (id: 6 )
-resData: 7 (id: 7 )
-resData: 8 (id: 8 )
-<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
-set read: 0 9
-resData: 1 (id: 1 )
-resData: 2 (id: 2 )
-resData: 3 (id: 3 )
-resData: 4 (id: 4 )
-resData: 5 (id: 5 )
-resData: 6 (id: 6 )
-resData: 7 (id: 7 )
-resData: 8 (id: 8 )
-<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
-set read: 0 9
-resData: 1 (id: 1 )
-resData: 2 (id: 2 )
-resData: 3 (id: 3 )
-resData: 4 (id: 4 )
-resData: 5 (id: 5 )
-resData: 6 (id: 6 )
-resData: 7 (id: 7 )
-resData: 8 (id: 8 )
-<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
-set read: 0 9
-resData: 1 (id: 1 )
-resData: 2 (id: 2 )
-resData: 3 (id: 3 )
-resData: 4 (id: 4 )
-resData: 5 (id: 5 )
-resData: 6 (id: 6 )
-resData: 7 (id: 7 )
-resData: 8 (id: 8 )
-<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
-set read: 0 9
-resData: 1 (id: 1 )
-resData: 2 (id: 2 )
-resData: 3 (id: 3 )
-resData: 4 (id: 4 )
-resData: 5 (id: 5 )
-resData: 6 (id: 6 )
-resData: 7 (id: 7 )
-resData: 8 (id: 8 )
-<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
-set read: 0 9
-resData: 1 (id: 1 )
-resData: 2 (id: 2 )
-resData: 3 (id: 3 )
-resData: 4 (id: 4 )
-resData: 5 (id: 5 )
-resData: 6 (id: 6 )
-resData: 7 (id: 7 )
-resData: 8 (id: 8 )
-<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
-set read: 0 9
-resData: 1 (id: 1 )
-resData: 2 (id: 2 )
-resData: 3 (id: 3 )
-resData: 4 (id: 4 )
-resData: 5 (id: 5 )
-resData: 6 (id: 6 )
-resData: 7 (id: 7 )
-resData: 8 (id: 8 )
-<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
-set read: 0 9
-resData: 1 (id: 1 )
-resData: 2 (id: 2 )
-resData: 3 (id: 3 )
-resData: 4 (id: 4 )
-resData: 5 (id: 5 )
-resData: 6 (id: 6 )
-resData: 7 (id: 7 )
-resData: 8 (id: 8 )
-<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
-set read: 0 9
-resData: 1 (id: 1 )
-resData: 2 (id: 2 )
-resData: 3 (id: 3 )
-resData: 4 (id: 4 )
-resData: 5 (id: 5 )
-resData: 6 (id: 6 )
-resData: 7 (id: 7 )
-resData: 8 (id: 8 )
-<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
-set read: 0 9
-resData: 1 (id: 1 )
-resData: 2 (id: 2 )
-resData: 3 (id: 3 )
-resData: 4 (id: 4 )
-resData: 5 (id: 5 )
-resData: 6 (id: 6 )
-resData: 7 (id: 7 )
-resData: 8 (id: 8 )
-<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
-set read: 0 9
-resData: 1 (id: 1 )
-resData: 2 (id: 2 )
-resData: 3 (id: 3 )
-resData: 4 (id: 4 )
-resData: 5 (id: 5 )
-resData: 6 (id: 6 )
-resData: 7 (id: 7 )
-resData: 8 (id: 8 )
-<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
-set read: 0 9
-resData: 1 (id: 1 )
-resData: 2 (id: 2 )
-resData: 3 (id: 3 )
-resData: 4 (id: 4 )
-resData: 5 (id: 5 )
-resData: 6 (id: 6 )
-resData: 7 (id: 7 )
-resData: 8 (id: 8 )
-<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
-set read: 0 9
-resData: 1 (id: 1 )
-resData: 2 (id: 2 )
-resData: 3 (id: 3 )
-resData: 4 (id: 4 )
-resData: 5 (id: 5 )
-resData: 6 (id: 6 )
-resData: 7 (id: 7 )
-resData: 8 (id: 8 )
-<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
-set read: 0 9
-resData: 1 (id: 1 )
-resData: 2 (id: 2 )
-resData: 3 (id: 3 )
-resData: 4 (id: 4 )
-resData: 5 (id: 5 )
-resData: 6 (id: 6 )
-resData: 7 (id: 7 )
-resData: 8 (id: 8 )
-<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
-set read: 0 9
-resData: 1 (id: 1 )
-resData: 2 (id: 2 )
-resData: 3 (id: 3 )
-resData: 4 (id: 4 )
-resData: 5 (id: 5 )
-resData: 6 (id: 6 )
-resData: 7 (id: 7 )
-resData: 8 (id: 8 )
-<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
-set read: 0 9
-resData: 1 (id: 1 )
-resData: 2 (id: 2 )
-resData: 3 (id: 3 )
-resData: 4 (id: 4 )
-resData: 5 (id: 5 )
-resData: 6 (id: 6 )
-resData: 7 (id: 7 )
-resData: 8 (id: 8 )
-<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
-set read: 0 9
-resData: 1 (id: 1 )
-resData: 2 (id: 2 )
-resData: 3 (id: 3 )
-resData: 4 (id: 4 )
-resData: 5 (id: 5 )
-resData: 6 (id: 6 )
-resData: 7 (id: 7 )
-resData: 8 (id: 8 )
-<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
-set read: 0 9
-resData: 1 (id: 1 )
-resData: 2 (id: 2 )
-resData: 3 (id: 3 )
-resData: 4 (id: 4 )
-resData: 5 (id: 5 )
-resData: 6 (id: 6 )
-resData: 7 (id: 7 )
-resData: 8 (id: 8 )
-<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
-set read: 0 9
-resData: 1 (id: 1 )
-resData: 2 (id: 2 )
-resData: 3 (id: 3 )
-resData: 4 (id: 4 )
-resData: 5 (id: 5 )
-resData: 6 (id: 6 )
-resData: 7 (id: 7 )
-resData: 8 (id: 8 )
-<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
-set read: 0 9
-resData: 1 (id: 1 )
-resData: 2 (id: 2 )
-resData: 3 (id: 3 )
-resData: 4 (id: 4 )
-resData: 5 (id: 5 )
-resData: 6 (id: 6 )
-resData: 7 (id: 7 )
-resData: 8 (id: 8 )
-<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
-set read: 0 9
-resData: 1 (id: 1 )
-resData: 2 (id: 2 )
-resData: 3 (id: 3 )
-resData: 4 (id: 4 )
-resData: 5 (id: 5 )
-resData: 6 (id: 6 )
-resData: 7 (id: 7 )
-resData: 8 (id: 8 )
-<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
-set read: 0 9
-resData: 1 (id: 1 )
-resData: 2 (id: 2 )
-resData: 3 (id: 3 )
-resData: 4 (id: 4 )
-resData: 5 (id: 5 )
-resData: 6 (id: 6 )
-resData: 7 (id: 7 )
-resData: 8 (id: 8 )
-<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
-set read: 0 9
-resData: 1 (id: 1 )
-resData: 2 (id: 2 )
-resData: 3 (id: 3 )
-resData: 4 (id: 4 )
-resData: 5 (id: 5 )
-resData: 6 (id: 6 )
-resData: 7 (id: 7 )
-resData: 8 (id: 8 )
-<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
-set read: 0 9
-resData: 1 (id: 1 )
-resData: 2 (id: 2 )
-resData: 3 (id: 3 )
-resData: 4 (id: 4 )
-resData: 5 (id: 5 )
-resData: 6 (id: 6 )
-resData: 7 (id: 7 )
-resData: 8 (id: 8 )
-<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
-set read: 0 9
-resData: 1 (id: 1 )
-resData: 2 (id: 2 )
-resData: 3 (id: 3 )
-resData: 4 (id: 4 )
-resData: 5 (id: 5 )
-resData: 6 (id: 6 )
-resData: 7 (id: 7 )
-resData: 8 (id: 8 )
-<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
-set read: 0 9
-resData: 1 (id: 1 )
-resData: 2 (id: 2 )
-resData: 3 (id: 3 )
-resData: 4 (id: 4 )
-resData: 5 (id: 5 )
-resData: 6 (id: 6 )
-resData: 7 (id: 7 )
-resData: 8 (id: 8 )
-<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
-set read: 0 9
-resData: 1 (id: 1 )
-resData: 2 (id: 2 )
-resData: 3 (id: 3 )
-resData: 4 (id: 4 )
-resData: 5 (id: 5 )
-resData: 6 (id: 6 )
-resData: 7 (id: 7 )
-resData: 8 (id: 8 )
-<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
-set read: 0 9
-resData: 1 (id: 1 )
-resData: 2 (id: 2 )
-resData: 3 (id: 3 )
-resData: 4 (id: 4 )
-resData: 5 (id: 5 )
-resData: 6 (id: 6 )
-resData: 7 (id: 7 )
-resData: 8 (id: 8 )
-<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
-set read: 0 9
-resData: 1 (id: 1 )
-resData: 2 (id: 2 )
-resData: 3 (id: 3 )
-resData: 4 (id: 4 )
-resData: 5 (id: 5 )
-resData: 6 (id: 6 )
-resData: 7 (id: 7 )
-resData: 8 (id: 8 )
-<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
-set read: 0 9
-resData: 1 (id: 1 )
-resData: 2 (id: 2 )
-resData: 3 (id: 3 )
-resData: 4 (id: 4 )
-resData: 5 (id: 5 )
-resData: 6 (id: 6 )
-resData: 7 (id: 7 )
-resData: 8 (id: 8 )
-<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
-set read: 0 9
-resData: 1 (id: 1 )
-resData: 2 (id: 2 )
-resData: 3 (id: 3 )
-resData: 4 (id: 4 )
-resData: 5 (id: 5 )
-resData: 6 (id: 6 )
-resData: 7 (id: 7 )
-resData: 8 (id: 8 )
-<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
-set read: 0 9
-resData: 1 (id: 1 )
-resData: 2 (id: 2 )
-resData: 3 (id: 3 )
-resData: 4 (id: 4 )
-resData: 5 (id: 5 )
-resData: 6 (id: 6 )
-resData: 7 (id: 7 )
-resData: 8 (id: 8 )
-<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
-set read: 0 9
-resData: 1 (id: 1 )
-resData: 2 (id: 2 )
-resData: 3 (id: 3 )
-resData: 4 (id: 4 )
-resData: 5 (id: 5 )
-resData: 6 (id: 6 )
-resData: 7 (id: 7 )
-resData: 8 (id: 8 )
-<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
-set read: 0 9
-resData: 1 (id: 1 )
-resData: 2 (id: 2 )
-resData: 3 (id: 3 )
-resData: 4 (id: 4 )
-resData: 5 (id: 5 )
-resData: 6 (id: 6 )
-resData: 7 (id: 7 )
-resData: 8 (id: 8 )
-<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
-set read: 0 9
-resData: 1 (id: 1 )
-resData: 2 (id: 2 )
-resData: 3 (id: 3 )
-resData: 4 (id: 4 )
-resData: 5 (id: 5 )
-resData: 6 (id: 6 )
-resData: 7 (id: 7 )
-resData: 8 (id: 8 )
-<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
-set read: 0 9
-resData: 1 (id: 1 )
-resData: 2 (id: 2 )
-resData: 3 (id: 3 )
-resData: 4 (id: 4 )
-resData: 5 (id: 5 )
-resData: 6 (id: 6 )
-resData: 7 (id: 7 )
-resData: 8 (id: 8 )
-<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
-set read: 0 9
-resData: 1 (id: 1 )
-resData: 2 (id: 2 )
-resData: 3 (id: 3 )
-resData: 4 (id: 4 )
-resData: 5 (id: 5 )
-resData: 6 (id: 6 )
-resData: 7 (id: 7 )
-resData: 8 (id: 8 )
-<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
-set read: 0 9
-resData: 1 (id: 1 )
-resData: 2 (id: 2 )
-resData: 3 (id: 3 )
-resData: 4 (id: 4 )
-resData: 5 (id: 5 )
-resData: 6 (id: 6 )
-resData: 7 (id: 7 )
-resData: 8 (id: 8 )
-<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
-set read: 0 9
-resData: 1 (id: 1 )
-resData: 2 (id: 2 )
-resData: 3 (id: 3 )
-resData: 4 (id: 4 )
-resData: 5 (id: 5 )
-resData: 6 (id: 6 )
-resData: 7 (id: 7 )
-resData: 8 (id: 8 )
-<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
-set read: 0 9
-resData: 1 (id: 1 )
-resData: 2 (id: 2 )
-resData: 3 (id: 3 )
-resData: 4 (id: 4 )
-resData: 5 (id: 5 )
-resData: 6 (id: 6 )
-resData: 7 (id: 7 )
-resData: 8 (id: 8 )
-<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
-set read: 0 9
-resData: 1 (id: 1 )
-resData: 2 (id: 2 )
-resData: 3 (id: 3 )
-resData: 4 (id: 4 )
-resData: 5 (id: 5 )
-resData: 6 (id: 6 )
-resData: 7 (id: 7 )
-resData: 8 (id: 8 )
-<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
-set read: 0 9
-resData: 1 (id: 1 )
-resData: 2 (id: 2 )
-resData: 3 (id: 3 )
-resData: 4 (id: 4 )
-resData: 5 (id: 5 )
-resData: 6 (id: 6 )
-resData: 7 (id: 7 )
-resData: 8 (id: 8 )
-<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
-set read: 0 9
-resData: 1 (id: 1 )
-resData: 2 (id: 2 )
-resData: 3 (id: 3 )
-resData: 4 (id: 4 )
-resData: 5 (id: 5 )
-resData: 6 (id: 6 )
-resData: 7 (id: 7 )
-resData: 8 (id: 8 )
-<Buffer 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09> 18 9
-set read: 0 9
-resData: 1 (id: 1 )
-resData: 2 (id: 2 )
-resData: 3 (id: 3 )
-resData: 4 (id: 4 )
-resData: 5 (id: 5 )
-resData: 6 (id: 6 )
-resData: 7 (id: 7 )
-resData: 8 (id: 8 )
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0
+SetInterval!
+check: 0

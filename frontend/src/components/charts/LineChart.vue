@@ -88,7 +88,6 @@
                 <b-col cols="4">
                     <b-card height="400px" header="연간 1차 에너지 사용량 (사용면적당)" header-tag="header" class="text-center">
                         <b-card-body>
-                            
                         </b-card-body>
                     </b-card>
                 </b-col>
@@ -156,8 +155,5 @@ export default {
             })
         }
     },
-    getRandomInt() {
-        return (Math.floor(Math.random() * (100 - 5 + 1)) + 5) % 10
-    }
 }
 </script>

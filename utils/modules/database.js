@@ -9,6 +9,9 @@ const connection = mysql.createConnection(dbconfig);
 connection.connect();
 
 var Database = {
+    Bacnet ={
+        
+    },
     device_select: function(table, callback){
         return new Promise(function(resolve, reject) {
             connection.query(`SELECT * from ${table}`, (error, rows, fields) => {

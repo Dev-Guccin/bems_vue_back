@@ -52,7 +52,7 @@ new cronJob('*/10 * * * * *',  function() {
     DBH.batch_device_select('realtime_table', function(rows){
         rows.forEach(row => { 
             console.log(row["object_name"])
-            object_values[row["object_name"]].push(row["logvalue"])
+            object_values[row["object_name"]].push(row["log_value"])
         })
         console.log(object_values)
     }) 
@@ -82,8 +82,8 @@ jobs.forEach(job => {
             console.log(job.message, new Date());
             for (const [key, value] of Object.entries(object_values)) {
                 DBH.batch_select(job.get, key, job.time_interval, function (rows) {
-                    if (rows[0]["avg(logvalue)"] != null){
-                        DBH.batch_insert(job.table, key, rows[0]["avg(logvalue)"])
+                    if (rows[0]["avg(log_value)"] != null){
+                        DBH.batch_insert(job.table, key, rows[0]["avg(log_value)"])
                     }
                 })
             }

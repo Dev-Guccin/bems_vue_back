@@ -3,50 +3,6 @@ const DBH  = require('./database.js')
 
 const filePath = './uploads/Modbus.xlsx'
 
-var IP={
-    Id :'',
-    Name : '',
-    ComType : '',
-    IpAddress : '',
-    Port : '',
-    Period : '',
-    WaitTime : '',
-    Active : ''
-}
-var Channel={
-    Id : '',
-    Name : '',
-    ChannelId : '',
-    FunctionCode : '',
-    DeviceAddress : '',
-    StartAddress : '',
-    ReadByte : '',
-    Active : ''
-}
-var Detail={
-    object_name : '',
-    object_type : '',
-    id : '',
-    units : '',
-    low_limit : '',
-    high_limit : '',
-    m_enable : '',
-    m_ip : '',
-    m_channel : '',
-    m_func : '',
-    m_addr : '',
-    m_offsetbit : '',
-    m_dattype : '',
-    m_r_scale : '',
-    m_r_offset	 : '',
-    m_w_ip : '',
-    m_w_id : '',
-    m_w_fc : '',
-    m_w_addr : '',
-    m_w_datatype : '',
-    m_w_scale : '',
-    m_w_offset : '',
-}
 var Excel = {
     loadExcelFile_modbus:  function(filepath){
         return new Promise(async function(resolve, reject) {
@@ -70,35 +26,34 @@ var Excel = {
                         await DBH.device_delete('modbus_ip')// DB깔끔하게 밀어버리기
                         for (i = 2; i < sheetData.length; i++) {
                             if (sheetData[i][1].value == '*')break
-                            IP.Id           =sheetData[i][1].value
-                            IP.Name	        =sheetData[i][2].value
-                            IP.ComType		=sheetData[i][3].value
-                            IP.IpAddress	=sheetData[i][4].value
-                            IP.Port		    =sheetData[i][5].value
-                            IP.Period		=sheetData[i][6].value
-                            IP.WaitTime	    =sheetData[i][7].value
-                            IP.Active		=sheetData[i][8].value
-                            // 이걸 DB에 저장해야함
-                            // console.log(IP)
-                            await DBH.device_insert(page, IP)
-                            // console.log("ip",IP.Id)
+                            Network = {}
+                            Network.id          =sheetData[i][1].value
+                            Network.name	    =sheetData[i][2].value
+                            Network.netword_type		=sheetData[i][3].value
+                            Network.address	=sheetData[i][4].value
+                            Network.port		=sheetData[i][5].value
+                            Network.period		=sheetData[i][6].value
+                            Network.wait_time	=sheetData[i][7].value
+                            Network.active		=sheetData[i][8].value
+
+                            await DBH.device_insert(page, Network)
                         }
                     }
                     else if(page ==1){//Frame 페이지
                         await DBH.device_delete('modbus_channels')// DB깔끔하게 밀어버리기
                         for (i = 2; i < sheetData.length; i++) {
                             if (sheetData[i][1].value == '*')break
-                            Channel.Id              =sheetData[i][1].value
-                            Channel.Name	        =sheetData[i][2].value
-                            Channel.ChannelId		=sheetData[i][3].value
-                            Channel.FunctionCode	=sheetData[i][4].value
-                            Channel.DeviceAddress	=sheetData[i][5].value
-                            Channel.StartAddress	=sheetData[i][6].value
-                            Channel.ReadByte		=sheetData[i][7].value
-                            Channel.Active		    =sheetData[i][8].value
-                            // 이걸 DB에 저장해야함
+                            Channel = {}
+                            Channel.id              =sheetData[i][1].value
+                            Channel.name	        =sheetData[i][2].value
+                            Channel.network_id		=sheetData[i][3].value
+                            Channel.function_code	=sheetData[i][4].value
+                            Channel.device_address	=sheetData[i][5].value
+                            Channel.start_address	=sheetData[i][6].value
+                            Channel.quantity		=sheetData[i][7].value
+                            Channel.active		    =sheetData[i][8].value
+
                             await DBH.device_insert(page, Channel)
-                            // console.log("channel",Channel.Id)
                         }
                     }
                     else{//Detail 페이지
@@ -106,32 +61,30 @@ var Excel = {
                         await DBH.device_delete('realtime_table')
                         for (i = 2; i < sheetData.length; i++) {
                             if (sheetData[i][1].value == '*')break
-                            Detail.object_name   =sheetData[i][1].value
-                            Detail.object_type   =sheetData[i][2].value
-                            Detail.id            =sheetData[i][3].value
-                            Detail.units         =(typeof sheetData[i][4] === 'undefined') ? '' : sheetData[i][4].value
-                            Detail.low_limit     =sheetData[i][5].value
-                            Detail.high_limit    =sheetData[i][6].value
-                            Detail.m_enable      =sheetData[i][7].value
-                            Detail.m_ip         =sheetData[i][8].value
-                            Detail.m_channel    =sheetData[i][9].value
-                            Detail.m_func       =sheetData[i][10].value
-                            Detail.m_addr       =sheetData[i][11].value
-                            Detail.m_offsetbit  =sheetData[i][12].value
-                            Detail.m_datatype   =sheetData[i][13].value
-                            Detail.m_r_scale    =sheetData[i][14].value
-                            Detail.m_r_offset   =sheetData[i][15].value
-                            Detail.m_w_ip       =(typeof sheetData[i][16] === 'undefined') ? null : (typeof sheetData[i][16].value.result === 'undefined') ? sheetData[i][16].value : sheetData[i][16].value.result
-                            Detail.m_w_id       =(typeof sheetData[i][17] === 'undefined') ? null : (typeof sheetData[i][17].value.result === 'undefined') ? sheetData[i][17].value : sheetData[i][17].value.result
-                            Detail.m_w_fc       =(typeof sheetData[i][18] === 'undefined') ? null : (typeof sheetData[i][18].value.result === 'undefined') ? sheetData[i][18].value : sheetData[i][18].value.result
-                            Detail.m_w_addr     =(typeof sheetData[i][19] === 'undefined') ? null : (typeof sheetData[i][19].value.result === 'undefined') ? sheetData[i][19].value : sheetData[i][19].value.result
-                            Detail.m_w_datatype =(typeof sheetData[i][20] === 'undefined') ? null : (typeof sheetData[i][20].value.result === 'undefined') ? sheetData[i][20].value : sheetData[i][20].value.result
-                            Detail.m_w_scale    =(typeof sheetData[i][21] === 'undefined') ? null : (typeof sheetData[i][21].value.result === 'undefined') ? sheetData[i][21].value : sheetData[i][21].value.result
-                            Detail.m_w_offset   =(typeof sheetData[i][22] === 'undefined') ? null : (typeof sheetData[i][22].value.result === 'undefined') ? sheetData[i][22].value : sheetData[i][22].value.result
+                            Data = {}
+                            Data.object_name   =sheetData[i][1].value
+                            Data.object_type   =sheetData[i][2].value
+                            Data.id            =sheetData[i][3].value
+                            Data.unit         =(typeof sheetData[i][4] === 'undefined') ? '' : sheetData[i][4].value
+                            Data.low_limit     =sheetData[i][5].value
+                            Data.high_limit    =sheetData[i][6].value
+                            Data.active      =sheetData[i][7].value
+                            Data.m_network         =sheetData[i][8].value
+                            Data.m_channel    =sheetData[i][9].value
+                            Data.m_func       =sheetData[i][10].value
+                            Data.m_addr       =sheetData[i][11].value
+                            Data.m_bitoffset  =sheetData[i][12].value
+                            Data.m_dattype   =sheetData[i][13].value
+                            Data.m_r_scale    =sheetData[i][14].value
+                            Data.m_r_offset   =sheetData[i][15].value
+                            Data.m_w_id       =(typeof sheetData[i][16] === 'undefined') ? null : (typeof sheetData[i][17].value.result === 'undefined') ? sheetData[i][17].value : sheetData[i][17].value.result
+                            Data.m_w_fc       =(typeof sheetData[i][17] === 'undefined') ? null : (typeof sheetData[i][18].value.result === 'undefined') ? sheetData[i][18].value : sheetData[i][18].value.result
+                            Data.m_w_addr     =(typeof sheetData[i][18] === 'undefined') ? null : (typeof sheetData[i][19].value.result === 'undefined') ? sheetData[i][19].value : sheetData[i][19].value.result
+                            Data.m_w_dattype =(typeof sheetData[i][19] === 'undefined') ? null : (typeof sheetData[i][20].value.result === 'undefined') ? sheetData[i][20].value : sheetData[i][20].value.result
+                            Data.m_w_scale    =(typeof sheetData[i][20] === 'undefined') ? null : (typeof sheetData[i][21].value.result === 'undefined') ? sheetData[i][21].value : sheetData[i][21].value.result
+                            Data.m_w_offset   =(typeof sheetData[i][21] === 'undefined') ? null : (typeof sheetData[i][22].value.result === 'undefined') ? sheetData[i][22].value : sheetData[i][22].value.result
                             
-                            await DBH.device_insert(page, Detail)
-                            // console.log("detail",Detail.id)
-                            // DBH.realtime_insert(Real)
+                            await DBH.device_insert(page, Data)
                         }
                     }
                 }
@@ -165,7 +118,7 @@ var Excel = {
                             if(sheetData[i][1].value == "*") break 
                             DEVICE.Id           =sheetData[i][1].value
                             DEVICE.Name	        =sheetData[i][2].value
-                            DEVICE.Address	=sheetData[i][3].value
+                            DEVICE.Address	    =sheetData[i][3].value
                             DEVICE.Broadcast_Address=sheetData[i][4].value
                             DEVICE.Port		    =sheetData[i][5].value
                             DEVICE.Period		=sheetData[i][6].value
@@ -182,7 +135,7 @@ var Excel = {
                         for (let i = 2; i < sheetData.length; i++) {
                             if(sheetData[i][1].value == "*") break
                             STATION.Id              =sheetData[i][1].value
-                            STATION.Object_Name	        =sheetData[i][2].value
+                            STATION.Object_Name	    =sheetData[i][2].value
                             STATION.Device_Id		=sheetData[i][3].value
                             STATION.Object		    =sheetData[i][4].value
                             STATION.Object_type	    =sheetData[i][5].value

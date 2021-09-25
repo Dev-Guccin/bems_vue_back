@@ -12,35 +12,23 @@ async function ctrl_check_start(){
     modbus_output()
 }
 
-
-function ctrl_target() {
-    ip = '',
-    port = 0,
-    object_name = '',
-    dattype = '',
-    scale = 0,
-    offset = 0,
-    ctrlvalue = 0,
-    func = 0
-    address = 0
-}
-
 function get_info(){
     return new Promise(async function(resolve, reject) {
         var rows = await DBH.select_not_null('mysql');
         for (const row of rows){
             // console.log(row)
-            tmp =  new ctrl_target()
+            tmp =  {}
+            tmp.id = row["id"]
+            tmp.ctrl_value = row['ctrl_value']
             tmp.object_name = row["object_name"]
-            tmp.ctrlvalue = row['ctrlvalue']
-            detail = await DBH.get_modbus_detail(row["object_name"])// get scale,offset,func,dattype,address
+            detail = await DBH.get_modbus_data(row["object_name"])// get scale,offset,func,dattype,address
             tmp.scale = detail['m_w_scale']
             tmp.offset = detail['m_w_offset']
             tmp.func = detail['m_w_fc']
             tmp.dattype = detail['m_dattype']
             tmp.address = Number(detail['m_w_addr'])
-            address = await DBH.get_ip_addr(detail['m_w_ip'])//ip_address,port
-            tmp.ip = address['ip_address']
+            address = await DBH.get_ip_addr(detail['m_network'])//ip_address,port
+            tmp.ip = address['address']
             tmp.port = address['port']
             ctrl_list.push(tmp)
         }
@@ -62,7 +50,7 @@ function modbus_output(){
         'port': target.port
         }
         socket.on('connect', function () {
-            value = target.ctrlvalue*target.scale + target.offset//multi 이면 list , single이면 그냥 단일 value
+            value = target.ctrl_value*target.scale + target.offset//multi 이면 list , single이면 그냥 단일 value
             // console.log(value)
             switch (target.dattype) {
                 case 0://unsigned int 16bit AB
@@ -162,4 +150,31 @@ function modbus_output(){
     }
     
 }
+
+
+
+
+// const modbus = require('jsmodbus')
+// const Serialport = require('serialport')
+// const socket = new Serialport('COM5', {
+//   baudRate: 9600,
+// })
+
+// // set Slave PLC ID
+// device_address = 1
+// const client = new modbus.client.RTU(socket, device_address)
+
+// socket.on('connect', function () {
+//   client.writeSingleRegister(0, 123).then(function (resp) {
+//     console.log(resp)
+//     socket.close()
+//   }).fail(function (err) {
+//     console.log(err)
+//     socket.close()
+//   })
+// })
+
+// socket.on('error', function (err) {
+//   console.log(err)
+// })
 

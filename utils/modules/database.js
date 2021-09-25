@@ -80,7 +80,7 @@ var Database = {
             return new Promise(function(resolve, reject) {
                 try{
                 connection.query(`INSERT INTO modbus_network (id, name, network_type, address, port, period, wait_time, active) 
-                VALUES(${data.Id},'${data.Name}','${data.ComType}','${data.IpAddress}',${data.Port},${data.Period},${data.WaitTime},${data.Active})`, (error,rows,field) => {
+                VALUES(${data.id},'${data.name}','${data.network_type }','${data.address }',${data.port },${data.period },${data.wait_time },${data.active })`, (error,rows,field) => {
                     if(error) throw error;
                     resolve();
                 });
@@ -94,7 +94,7 @@ var Database = {
             return new Promise(function(resolve, reject) {
                 try{
                 connection.query(`INSERT INTO modbus_channel (id, name, network_id, function_code, device_address,start_address, quantity, active)
-                VALUES(${data.Id},'${data.Name}',${data.ChannelId},${data.FunctionCode},${data.DeviceAddress},${data.StartAddress},${data.ReadByte},${data.Active})`,(error,rows,field) => {
+                VALUES(${data.id },'${data.name }',${data.network_id },${data.function_code },${data.device_address },${data.start_address },${data.quantity },${data.active })`,(error,rows,field) => {
                     if(error) throw error;
                     resolve();
                 });
@@ -107,7 +107,7 @@ var Database = {
             return new Promise(function(resolve, reject) {
                 try{
                 connection.query(`INSERT INTO modbus_data (object_name, object_type, id, unit, low_limit, high_limit, active, m_network ,m_channel ,m_func ,m_addr ,m_bitoffset  ,m_dattype ,m_r_scale ,m_r_offset ,m_w_id ,m_w_fc ,m_w_addr ,m_w_dattype ,m_w_scale ,m_w_offset )
-                VALUES('${data.object_name}','${data.object_type}',${data.id},'${data.units}','${data.low_limit}','${data.high_limit}',${data.m_enable},${data.m_ip},${data.m_channel},${data.m_func},'${data.m_addr}',${data.m_offsetbit},${data.m_datatype},${data.m_r_scale},${data.m_r_offset},${data.m_w_id},${data.m_w_fc},'${data.m_w_addr}',${data.m_w_datatype},${data.m_w_scale},${data.m_w_offset})`, (error,rows,field) => {
+                VALUES('${data.object_name}','${data.object_type}',${data.id},'${data.unit}','${data.low_limit}','${data.high_limit}',${data.active},${data.m_network},${data.m_channel},${data.m_func},'${data.m_addr}',${data.m_bitoffset},${data.m_dattype},${data.m_r_scale},${data.m_r_offset},${data.m_w_id},${data.m_w_fc},'${data.m_w_addr}',${data.m_w_dattype},${data.m_w_scale},${data.m_w_offset})`, (error,rows,field) => {
                     if(error) throw error;
                     resolve();
                 });

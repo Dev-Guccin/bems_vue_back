@@ -9,7 +9,7 @@ const connection = mysql.createConnection(dbconfig);
 connection.connect();
 
 var Database = {
-    device_delete: function(tablename){
+    device_delete:  function(tablename){
         return new Promise(function(resolve, reject) {
             connection.query(`DELETE FROM ${tablename}` , (error, rows, fields) => {
                 if (error) throw error;

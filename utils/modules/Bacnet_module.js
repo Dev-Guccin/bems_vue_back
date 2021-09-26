@@ -17,7 +17,7 @@ client.on('iAm', (msg) => {
 client.on('whoIs', (msg) => {})
 async function main() {
   //1. 엑셀의 설정을 db로 옮긴다.
-  await Excel.loadExcelFile()
+  await Excel.loadExcelFile_bacnet()
 
   //2. whois로 존재하는 오브젝트들 확인 → active
   client.whoIs(bacnetConfig.broadcastAddress)

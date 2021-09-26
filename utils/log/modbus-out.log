@@ -1,921 +1,5416 @@
+2 [
+  <1 empty item>,
+  {
+    value: '4MSYS 화재',
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 'AI',
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 'Bar',
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 999999999,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 3,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 5,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: { formula: '1/N2', result: 1, ref: 'T2:T7', shareType: 'shared' },
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 10,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  }
+]
+3 [
+  <1 empty item>,
+  {
+    value: '4MSYS 온도',
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 'AI',
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 2,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 'Bar',
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 999999999,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 3,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 5,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: { result: 1, sharedFormula: 'T2' },
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  }
+]
+4 [
+  <1 empty item>,
+  {
+    value: '4MSYS 습도',
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 'AI',
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 3,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 'Bar',
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 999999999,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 3,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 2,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 5,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 2,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: { result: 1, sharedFormula: 'T2' },
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  }
+]
+5 [
+  <1 empty item>,
+  {
+    value: '4MSYS pm10',
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 'AI',
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 4,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 'Bar',
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 999999999,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 3,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 3,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 5,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 3,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: { result: 1, sharedFormula: 'T2' },
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  }
+]
+6 [
+  <1 empty item>,
+  {
+    value: '4MSYS pm2.5',
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 'AI',
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 5,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 'Bar',
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 999999999,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 3,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 4,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 5,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 4,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 2,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: { result: 1, sharedFormula: 'T2' },
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  }
+]
+7 [
+  <1 empty item>,
+  {
+    value: '4MSYS co2',
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 'AI',
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 6,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 'Bar',
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 999999999,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 3,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 5,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 5,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 5,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 2,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: { result: 1, sharedFormula: 'T2' },
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  }
+]
+8 [
+  <1 empty item>,
+  {
+    value: '4MSYS o2',
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 'AI',
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 7,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 'Bar',
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 999999999,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 3,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 6,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 5,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 6,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 3,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: { formula: '1/N8', result: 1 },
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  }
+]
+9 [
+  <1 empty item>,
+  {
+    value: '4MSYS 동작감지',
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 'AI',
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 8,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 'Bar',
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 999999999,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 3,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 7,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 5,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 7,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 3,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: { formula: '1/N9', result: 1, ref: 'T9:T14', shareType: 'shared' },
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  }
+]
+10 [
+  <1 empty item>,
+  {
+    value: '4MSYS 전력',
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 'AI',
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 9,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 'Bar',
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 999999999,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 3,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 8,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 5,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 8,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 4,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: { result: 1, sharedFormula: 'T9' },
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  }
+]
+11 [
+  <1 empty item>,
+  {
+    value: '4MSYS 수도',
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 'AI',
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 10,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 'Bar',
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 999999999,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 3,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 9,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 5,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 9,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 4,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: { result: 1, sharedFormula: 'T9' },
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  }
+]
+12 [
+  <1 empty item>,
+  {
+    value: '4MSYS 가스',
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 'AI',
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 11,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 'Bar',
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 999999999,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 3,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 10,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 5,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 10,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 10,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: { result: 1, sharedFormula: 'T9' },
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  }
+]
+13 [
+  <1 empty item>,
+  {
+    value: '4MSYS 난방',
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 'AI',
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 12,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 'Bar',
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 999999999,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 3,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 11,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 5,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 11,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 5,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: { result: 1, sharedFormula: 'T9' },
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  }
+]
+14 [
+  <1 empty item>,
+  {
+    value: '4MSYS 급탕',
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 'AI',
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 13,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 'Bar',
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 999999999,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 3,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 12,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 5,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 12,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 6,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: { result: 1, sharedFormula: 'T9' },
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  }
+]
 get_excel완료
 info 완료
-Detail {
+{
   object_name: '4MSYS 화재',
   object_type: 'AI',
   m_addr: 0,
-  m_w_addr: 0,
   id: 1,
   units: 'Bar',
   low_limit: '0',
   high_limit: '999999999',
-  m_enable: 1,
-  m_ip: 1,
+  active: 1,
   m_channel: 1,
   m_func: 3,
-  m_offsetbit: 0,
+  m_bitoffset: 0,
   m_dattype: 1,
   m_r_scale: 1,
-  m_r_offset: 0,
-  m_w_ip: 1,
-  m_w_id: 0,
-  m_w_fc: 5,
-  m_w_dattype: 0,
-  m_w_scale: 1,
-  m_w_offset: 0
+  m_r_offset: 0
 }
-Detail {
+{
   object_name: '4MSYS 온도',
   object_type: 'AI',
   m_addr: 1,
-  m_w_addr: 1,
   id: 2,
   units: 'Bar',
   low_limit: '0',
   high_limit: '999999999',
-  m_enable: 1,
-  m_ip: 1,
+  active: 1,
   m_channel: 1,
   m_func: 3,
-  m_offsetbit: 0,
+  m_bitoffset: 0,
   m_dattype: 1,
   m_r_scale: 1,
-  m_r_offset: 0,
-  m_w_ip: 1,
-  m_w_id: 0,
-  m_w_fc: 5,
-  m_w_dattype: 0,
-  m_w_scale: 1,
-  m_w_offset: 0
+  m_r_offset: 0
 }
-Detail {
+{
   object_name: '4MSYS 습도',
   object_type: 'AI',
   m_addr: 2,
-  m_w_addr: 2,
   id: 3,
   units: 'Bar',
   low_limit: '0',
   high_limit: '999999999',
-  m_enable: 1,
-  m_ip: 1,
+  active: 1,
   m_channel: 1,
   m_func: 3,
-  m_offsetbit: 0,
+  m_bitoffset: 0,
   m_dattype: 1,
   m_r_scale: 1,
-  m_r_offset: 0,
-  m_w_ip: 1,
-  m_w_id: 0,
-  m_w_fc: 5,
-  m_w_dattype: 1,
-  m_w_scale: 1,
-  m_w_offset: 0
+  m_r_offset: 0
 }
-Detail {
+{
   object_name: '4MSYS pm10',
   object_type: 'AI',
   m_addr: 3,
-  m_w_addr: 3,
   id: 4,
   units: 'Bar',
   low_limit: '0',
   high_limit: '999999999',
-  m_enable: 1,
-  m_ip: 1,
+  active: 1,
   m_channel: 1,
   m_func: 3,
-  m_offsetbit: 0,
+  m_bitoffset: 0,
   m_dattype: 1,
   m_r_scale: 1,
-  m_r_offset: 0,
-  m_w_ip: 1,
-  m_w_id: 0,
-  m_w_fc: 5,
-  m_w_dattype: 1,
-  m_w_scale: 1,
-  m_w_offset: 0
+  m_r_offset: 0
 }
-Detail {
+{
   object_name: '4MSYS pm2.5',
   object_type: 'AI',
   m_addr: 4,
-  m_w_addr: 4,
   id: 5,
   units: 'Bar',
   low_limit: '0',
   high_limit: '999999999',
-  m_enable: 1,
-  m_ip: 1,
+  active: 1,
   m_channel: 1,
   m_func: 3,
-  m_offsetbit: 0,
+  m_bitoffset: 0,
   m_dattype: 1,
   m_r_scale: 1,
-  m_r_offset: 0,
-  m_w_ip: 1,
-  m_w_id: 0,
-  m_w_fc: 5,
-  m_w_dattype: 2,
-  m_w_scale: 1,
-  m_w_offset: 0
+  m_r_offset: 0
 }
-Detail {
+{
   object_name: '4MSYS co2',
   object_type: 'AI',
   m_addr: 5,
-  m_w_addr: 5,
   id: 6,
   units: 'Bar',
   low_limit: '0',
   high_limit: '999999999',
-  m_enable: 1,
-  m_ip: 1,
+  active: 1,
   m_channel: 1,
   m_func: 3,
-  m_offsetbit: 0,
+  m_bitoffset: 0,
   m_dattype: 1,
   m_r_scale: 1,
-  m_r_offset: 0,
-  m_w_ip: 1,
-  m_w_id: 0,
-  m_w_fc: 5,
-  m_w_dattype: 2,
-  m_w_scale: 1,
-  m_w_offset: 0
+  m_r_offset: 0
 }
-Detail {
+{
   object_name: '4MSYS o2',
   object_type: 'AI',
   m_addr: 6,
-  m_w_addr: 6,
   id: 7,
   units: 'Bar',
   low_limit: '0',
   high_limit: '999999999',
-  m_enable: 1,
-  m_ip: 1,
+  active: 1,
   m_channel: 1,
   m_func: 3,
-  m_offsetbit: 0,
+  m_bitoffset: 0,
   m_dattype: 1,
   m_r_scale: 1,
-  m_r_offset: 0,
-  m_w_ip: 1,
-  m_w_id: 0,
-  m_w_fc: 5,
-  m_w_dattype: 3,
-  m_w_scale: 1,
-  m_w_offset: 0
+  m_r_offset: 0
 }
-Detail {
+{
   object_name: '4MSYS 동작감지',
   object_type: 'AI',
   m_addr: 7,
-  m_w_addr: 7,
   id: 8,
   units: 'Bar',
   low_limit: '0',
   high_limit: '999999999',
-  m_enable: 1,
-  m_ip: 1,
+  active: 1,
   m_channel: 1,
   m_func: 3,
-  m_offsetbit: 0,
+  m_bitoffset: 0,
   m_dattype: 1,
   m_r_scale: 1,
-  m_r_offset: 0,
-  m_w_ip: 1,
-  m_w_id: 0,
-  m_w_fc: 5,
-  m_w_dattype: 3,
-  m_w_scale: 1,
-  m_w_offset: 0
+  m_r_offset: 0
 }
-Detail {
+{
   object_name: '4MSYS 전력',
   object_type: 'AI',
   m_addr: 8,
-  m_w_addr: 8,
   id: 9,
   units: 'Bar',
   low_limit: '0',
   high_limit: '999999999',
-  m_enable: 1,
-  m_ip: 1,
+  active: 1,
   m_channel: 1,
   m_func: 3,
-  m_offsetbit: 0,
+  m_bitoffset: 0,
   m_dattype: 1,
   m_r_scale: 1,
-  m_r_offset: 0,
-  m_w_ip: 1,
-  m_w_id: 0,
-  m_w_fc: 5,
-  m_w_dattype: 4,
-  m_w_scale: 1,
-  m_w_offset: 0
+  m_r_offset: 0
 }
-Detail {
+{
   object_name: '4MSYS 수도',
   object_type: 'AI',
   m_addr: 9,
-  m_w_addr: 9,
   id: 10,
   units: 'Bar',
   low_limit: '0',
   high_limit: '999999999',
-  m_enable: 1,
-  m_ip: 1,
+  active: 1,
   m_channel: 1,
   m_func: 3,
-  m_offsetbit: 0,
+  m_bitoffset: 0,
   m_dattype: 1,
   m_r_scale: 1,
-  m_r_offset: 0,
-  m_w_ip: 1,
-  m_w_id: 0,
-  m_w_fc: 5,
-  m_w_dattype: 4,
-  m_w_scale: 1,
-  m_w_offset: 0
+  m_r_offset: 0
 }
-Detail {
+{
   object_name: '4MSYS 가스',
   object_type: 'AI',
   m_addr: 10,
-  m_w_addr: 10,
   id: 11,
   units: 'Bar',
   low_limit: '0',
   high_limit: '999999999',
-  m_enable: 1,
-  m_ip: 1,
+  active: 1,
   m_channel: 1,
   m_func: 3,
-  m_offsetbit: 0,
+  m_bitoffset: 0,
   m_dattype: 1,
   m_r_scale: 1,
-  m_r_offset: 0,
-  m_w_ip: 1,
-  m_w_id: 0,
-  m_w_fc: 5,
-  m_w_dattype: 10,
-  m_w_scale: 1,
-  m_w_offset: 0
+  m_r_offset: 0
 }
-Detail {
+{
   object_name: '4MSYS 난방',
   object_type: 'AI',
   m_addr: 11,
-  m_w_addr: 11,
   id: 12,
   units: 'Bar',
   low_limit: '0',
   high_limit: '999999999',
-  m_enable: 1,
-  m_ip: 1,
+  active: 1,
   m_channel: 1,
   m_func: 3,
-  m_offsetbit: 0,
+  m_bitoffset: 0,
   m_dattype: 1,
   m_r_scale: 1,
-  m_r_offset: 0,
-  m_w_ip: 1,
-  m_w_id: 0,
-  m_w_fc: 5,
-  m_w_dattype: 5,
-  m_w_scale: 1,
-  m_w_offset: 0
+  m_r_offset: 0
 }
-Detail {
+{
   object_name: '4MSYS 급탕',
   object_type: 'AI',
   m_addr: 12,
-  m_w_addr: 12,
   id: 13,
   units: 'Bar',
   low_limit: '0',
   high_limit: '999999999',
-  m_enable: 1,
-  m_ip: 1,
+  active: 1,
   m_channel: 1,
   m_func: 3,
-  m_offsetbit: 0,
+  m_bitoffset: 0,
   m_dattype: 1,
   m_r_scale: 1,
-  m_r_offset: 0,
-  m_w_ip: 1,
-  m_w_id: 0,
-  m_w_fc: 5,
-  m_w_dattype: 6,
-  m_w_scale: 1,
-  m_w_offset: 0
+  m_r_offset: 0
 }
 excel 정합성ok
 start 통신
-connected!!!! 192.168.0.41
-targetFrame!!! [
-  Channel {
-    id: 1,
-    fr_name: '센서1',
-    channel_id: 1,
-    function_code: 3,
-    device_address: 1,
-    start_address: 0,
-    read_byte: 18,
-    active: 1
+2 [
+  <1 empty item>,
+  {
+    value: '4MSYS 화재',
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 'AI',
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 'Bar',
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 999999999,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 3,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 5,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: { formula: '1/N2', result: 1, ref: 'T2:T7', shareType: 'shared' },
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 10,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
   }
 ]
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
-SetInterval!
-check: 0
+3 [
+  <1 empty item>,
+  {
+    value: '4MSYS 온도',
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 'AI',
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 2,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 'Bar',
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 999999999,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 3,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 5,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: { result: 1, sharedFormula: 'T2' },
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  }
+]
+4 [
+  <1 empty item>,
+  {
+    value: '4MSYS 습도',
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 'AI',
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 3,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 'Bar',
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 999999999,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 3,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 2,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 5,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 2,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: { result: 1, sharedFormula: 'T2' },
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  }
+]
+5 [
+  <1 empty item>,
+  {
+    value: '4MSYS pm10',
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 'AI',
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 4,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 'Bar',
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 999999999,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 3,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 3,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 5,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 3,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: { result: 1, sharedFormula: 'T2' },
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  }
+]
+6 [
+  <1 empty item>,
+  {
+    value: '4MSYS pm2.5',
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 'AI',
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 5,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 'Bar',
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 999999999,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 3,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 4,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 5,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 4,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 2,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: { result: 1, sharedFormula: 'T2' },
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  }
+]
+7 [
+  <1 empty item>,
+  {
+    value: '4MSYS co2',
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 'AI',
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 6,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 'Bar',
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 999999999,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 3,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 5,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 5,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 5,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 2,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: { result: 1, sharedFormula: 'T2' },
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  }
+]
+8 [
+  <1 empty item>,
+  {
+    value: '4MSYS o2',
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 'AI',
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 7,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 'Bar',
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 999999999,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 3,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 6,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 5,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 6,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 3,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: { formula: '1/N8', result: 1 },
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  }
+]
+9 [
+  <1 empty item>,
+  {
+    value: '4MSYS 동작감지',
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 'AI',
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 8,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 'Bar',
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 999999999,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 3,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 7,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 5,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 7,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 3,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: { formula: '1/N9', result: 1, ref: 'T9:T14', shareType: 'shared' },
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  }
+]
+10 [
+  <1 empty item>,
+  {
+    value: '4MSYS 전력',
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 'AI',
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 9,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 'Bar',
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 999999999,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 3,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 8,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 5,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 8,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 4,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: { result: 1, sharedFormula: 'T9' },
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  }
+]
+11 [
+  <1 empty item>,
+  {
+    value: '4MSYS 수도',
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 'AI',
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 10,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 'Bar',
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 999999999,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 3,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 9,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 5,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 9,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 4,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: { result: 1, sharedFormula: 'T9' },
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  }
+]
+12 [
+  <1 empty item>,
+  {
+    value: '4MSYS 가스',
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 'AI',
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 11,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 'Bar',
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 999999999,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 3,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 10,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 5,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 10,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 10,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: { result: 1, sharedFormula: 'T9' },
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  }
+]
+13 [
+  <1 empty item>,
+  {
+    value: '4MSYS 난방',
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 'AI',
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 12,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 'Bar',
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 999999999,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 3,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 11,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 5,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 11,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 5,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: { result: 1, sharedFormula: 'T9' },
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  }
+]
+14 [
+  <1 empty item>,
+  {
+    value: '4MSYS 급탕',
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 'AI',
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 13,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 'Bar',
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 999999999,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 3,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 12,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 1,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 5,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 12,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 6,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: { result: 1, sharedFormula: 'T9' },
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  },
+  {
+    value: 0,
+    style: {
+      font: [Object],
+      border: [Object],
+      fill: [Object],
+      alignment: [Object]
+    }
+  }
+]
+get_excel완료
+info 완료
+{
+  object_name: '4MSYS 화재',
+  object_type: 'AI',
+  m_addr: 0,
+  id: 1,
+  units: 'Bar',
+  low_limit: '0',
+  high_limit: '999999999',
+  active: 1,
+  m_channel: 1,
+  m_func: 3,
+  m_bitoffset: 0,
+  m_dattype: 1,
+  m_r_scale: 1,
+  m_r_offset: 0
+}
+{
+  object_name: '4MSYS 온도',
+  object_type: 'AI',
+  m_addr: 1,
+  id: 2,
+  units: 'Bar',
+  low_limit: '0',
+  high_limit: '999999999',
+  active: 1,
+  m_channel: 1,
+  m_func: 3,
+  m_bitoffset: 0,
+  m_dattype: 1,
+  m_r_scale: 1,
+  m_r_offset: 0
+}
+{
+  object_name: '4MSYS 습도',
+  object_type: 'AI',
+  m_addr: 2,
+  id: 3,
+  units: 'Bar',
+  low_limit: '0',
+  high_limit: '999999999',
+  active: 1,
+  m_channel: 1,
+  m_func: 3,
+  m_bitoffset: 0,
+  m_dattype: 1,
+  m_r_scale: 1,
+  m_r_offset: 0
+}
+{
+  object_name: '4MSYS pm10',
+  object_type: 'AI',
+  m_addr: 3,
+  id: 4,
+  units: 'Bar',
+  low_limit: '0',
+  high_limit: '999999999',
+  active: 1,
+  m_channel: 1,
+  m_func: 3,
+  m_bitoffset: 0,
+  m_dattype: 1,
+  m_r_scale: 1,
+  m_r_offset: 0
+}
+{
+  object_name: '4MSYS pm2.5',
+  object_type: 'AI',
+  m_addr: 4,
+  id: 5,
+  units: 'Bar',
+  low_limit: '0',
+  high_limit: '999999999',
+  active: 1,
+  m_channel: 1,
+  m_func: 3,
+  m_bitoffset: 0,
+  m_dattype: 1,
+  m_r_scale: 1,
+  m_r_offset: 0
+}
+{
+  object_name: '4MSYS co2',
+  object_type: 'AI',
+  m_addr: 5,
+  id: 6,
+  units: 'Bar',
+  low_limit: '0',
+  high_limit: '999999999',
+  active: 1,
+  m_channel: 1,
+  m_func: 3,
+  m_bitoffset: 0,
+  m_dattype: 1,
+  m_r_scale: 1,
+  m_r_offset: 0
+}
+{
+  object_name: '4MSYS o2',
+  object_type: 'AI',
+  m_addr: 6,
+  id: 7,
+  units: 'Bar',
+  low_limit: '0',
+  high_limit: '999999999',
+  active: 1,
+  m_channel: 1,
+  m_func: 3,
+  m_bitoffset: 0,
+  m_dattype: 1,
+  m_r_scale: 1,
+  m_r_offset: 0
+}
+{
+  object_name: '4MSYS 동작감지',
+  object_type: 'AI',
+  m_addr: 7,
+  id: 8,
+  units: 'Bar',
+  low_limit: '0',
+  high_limit: '999999999',
+  active: 1,
+  m_channel: 1,
+  m_func: 3,
+  m_bitoffset: 0,
+  m_dattype: 1,
+  m_r_scale: 1,
+  m_r_offset: 0
+}
+{
+  object_name: '4MSYS 전력',
+  object_type: 'AI',
+  m_addr: 8,
+  id: 9,
+  units: 'Bar',
+  low_limit: '0',
+  high_limit: '999999999',
+  active: 1,
+  m_channel: 1,
+  m_func: 3,
+  m_bitoffset: 0,
+  m_dattype: 1,
+  m_r_scale: 1,
+  m_r_offset: 0
+}
+{
+  object_name: '4MSYS 수도',
+  object_type: 'AI',
+  m_addr: 9,
+  id: 10,
+  units: 'Bar',
+  low_limit: '0',
+  high_limit: '999999999',
+  active: 1,
+  m_channel: 1,
+  m_func: 3,
+  m_bitoffset: 0,
+  m_dattype: 1,
+  m_r_scale: 1,
+  m_r_offset: 0
+}
+{
+  object_name: '4MSYS 가스',
+  object_type: 'AI',
+  m_addr: 10,
+  id: 11,
+  units: 'Bar',
+  low_limit: '0',
+  high_limit: '999999999',
+  active: 1,
+  m_channel: 1,
+  m_func: 3,
+  m_bitoffset: 0,
+  m_dattype: 1,
+  m_r_scale: 1,
+  m_r_offset: 0
+}
+{
+  object_name: '4MSYS 난방',
+  object_type: 'AI',
+  m_addr: 11,
+  id: 12,
+  units: 'Bar',
+  low_limit: '0',
+  high_limit: '999999999',
+  active: 1,
+  m_channel: 1,
+  m_func: 3,
+  m_bitoffset: 0,
+  m_dattype: 1,
+  m_r_scale: 1,
+  m_r_offset: 0
+}
+{
+  object_name: '4MSYS 급탕',
+  object_type: 'AI',
+  m_addr: 12,
+  id: 13,
+  units: 'Bar',
+  low_limit: '0',
+  high_limit: '999999999',
+  active: 1,
+  m_channel: 1,
+  m_func: 3,
+  m_bitoffset: 0,
+  m_dattype: 1,
+  m_r_scale: 1,
+  m_r_offset: 0
+}
+excel 정합성ok
+start 통신

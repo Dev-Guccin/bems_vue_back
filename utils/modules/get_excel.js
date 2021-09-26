@@ -1,3 +1,4 @@
+'use strict'
 const ExcelJS = require('exceljs')
 const DBH = require('./database.js')
 
@@ -26,11 +27,11 @@ var Excel = {
             })
           })
           if (page == 0) {
-            // Device 페이지
+            // network 페이지
             await DBH.device_delete('modbus_network') // DB깔끔하게 밀어버리기
             for (i = 2; i < sheetData.length; i++) {
               if (sheetData[i][1].value == '*') break
-              Network = {}
+              let Network = {}
               Network.id = sheetData[i][1].value
               Network.name = sheetData[i][2].value
               Network.netword_type = sheetData[i][3].value
@@ -43,11 +44,11 @@ var Excel = {
               await DBH.device_insert(page, Network)
             }
           } else if (page == 1) {
-            //Frame 페이지
+            //channel 페이지
             await DBH.device_delete('modbus_channel') // DB깔끔하게 밀어버리기
             for (i = 2; i < sheetData.length; i++) {
               if (sheetData[i][1].value == '*') break
-              Channel = {}
+              let Channel = {}
               Channel.id = sheetData[i][1].value
               Channel.name = sheetData[i][2].value
               Channel.network_id = sheetData[i][3].value
@@ -60,13 +61,13 @@ var Excel = {
               await DBH.device_insert(page, Channel)
             }
           } else {
-            //Detail 페이지
+            //Data 페이지
             await DBH.device_delete('modbus_data') // DB깔끔하게 밀어버리기
             await DBH.device_delete('realtime_table') // 성연아 이거 밀어버리는게 맞나?
             for (i = 2; i < sheetData.length; i++) {
               if (sheetData[i][1].value == '*') break
               console.log(i, sheetData[i])
-              Data = {}
+              let Data = {}
               Data.object_name = sheetData[i][1].value
               Data.object_type = sheetData[i][2].value
               Data.id = sheetData[i][3].value
@@ -158,6 +159,7 @@ var Excel = {
             await DBH.delete_table('bacnet_device') // DB깔끔하게 밀어버리기
             for (let i = 2; i < sheetData.length; i++) {
               if (sheetData[i][1].value == '*') break
+              let DEVICE = {}
               DEVICE.Id = sheetData[i][1].value
               DEVICE.Name = sheetData[i][2].value
               DEVICE.Address = sheetData[i][3].value
@@ -176,6 +178,7 @@ var Excel = {
             await DBH.delete_table('bacnet_station') // DB깔끔하게 밀어버리기
             for (let i = 2; i < sheetData.length; i++) {
               if (sheetData[i][1].value == '*') break
+              let STATION = {}
               STATION.Id = sheetData[i][1].value
               STATION.Object_Name = sheetData[i][2].value
               STATION.Device_Id = sheetData[i][3].value

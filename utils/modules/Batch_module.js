@@ -54,7 +54,6 @@ new cronJob('*/10 * * * * *',  function() {
             console.log(row["object_name"])
             object_values[row["object_name"]].push(row["log_value"])
         })
-        console.log(object_values)
     }) 
     }catch(e){
         console.log("10second batch error : ",e)

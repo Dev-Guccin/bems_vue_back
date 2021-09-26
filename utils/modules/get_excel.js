@@ -66,7 +66,6 @@ var Excel = {
             await DBH.device_delete('realtime_table') // 성연아 이거 밀어버리는게 맞나?
             for (i = 2; i < sheetData.length; i++) {
               if (sheetData[i][1].value == '*') break
-              console.log(i, sheetData[i])
               let Data = {}
               Data.object_name = sheetData[i][1].value
               Data.object_type = sheetData[i][2].value
@@ -169,9 +168,7 @@ var Excel = {
               DEVICE.Active = sheetData[i][7].value
               DEVICE.Available = sheetData[i][8].value
               // 이걸 DB에 저장해야함
-              //console.log(DEVICE)
               await DBH.insert_table(page, DEVICE)
-              // console.log("DEVICE",DEVICE.Id)
             }
           } else if (page == 1) {
             //Station 페이지
@@ -188,7 +185,6 @@ var Excel = {
               STATION.Value_type = sheetData[i][7].value
               STATION.Active = sheetData[i][8].value
               // 이걸 DB에 저장해야함
-              //console.log(STATION)
               await DBH.insert_table(page, STATION)
             }
           }

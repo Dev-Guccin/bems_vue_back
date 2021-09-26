@@ -249,7 +249,7 @@ function modbusStart() {
 
 function response_process(targetchannels_fi, resp) {
   DBH.channel_inc('rx', targetchannels_fi.id)
-  let se, sensors, targetIdx, resData
+  let se, sensors, targetIdx, resData, res
   let modbus_result = resp.response._body._valuesAsBuffer
   //console.log(modbus_result, Buffer.byteLength(modbus_result, 'utf8'), targetchannels_fi.quantity)
   //이제 여기서 데이터를 정규화 하는 작업 해야함
@@ -279,54 +279,54 @@ function response_process(targetchannels_fi, resp) {
           resData = modbus_result.readInt32BE(targetIdx)
           break
         case 3: //3 : 32bit signed int - CD AB
-          let res = modbus_result
+          res = modbus_result
             .slice(targetIdx, targetIdx + 8)
             .swap32()
             .swap16()
           resData = res.readInt32BE()
           break
         case 4: // 4 :  32bit signed int - BA DC
-          let res = modbus_result.slice(targetIdx, targetIdx + 8).swap16()
+          res = modbus_result.slice(targetIdx, targetIdx + 8).swap16()
           resData = res.readInt32BE()
           break
         case 5: //5 :  32bit signed int - DC BA
-          let res = modbus_result.slice(targetIdx, targetIdx + 8).swap32()
+          res = modbus_result.slice(targetIdx, targetIdx + 8).swap32()
           resData = res.readInt32BE()
           break
         case 6: //6 : float  - AB CD
           resData = modbus_result.slice(targetIdx, targetIdx + 8).readFloatLE()
           break
         case 7: //7 : float - CD AB
-          let res = modbus_result
+          res = modbus_result
             .slice(targetIdx, targetIdx + 8)
             .swap32()
             .swap16()
           resData = res.readFloatBE()
           break
         case 8: //8 : float - BA DC
-          let res = modbus_result.slice(targetIdx, targetIdx + 4).swap16()
+          res = modbus_result.slice(targetIdx, targetIdx + 4).swap16()
           resData = res.readFloatBE()
           break
         case 9: //9 : float - DC BA
-          let res = modbus_result.slice(targetIdx, targetIdx + 4).swap32()
+          res = modbus_result.slice(targetIdx, targetIdx + 4).swap32()
           resData = res.readFloatBE()
           break
         case 10: //10 : 64bit double - AB CD EF GH
           resData = modbus_result.readDoubleBE(targetIdx)
           break
         case 11: //11 : 64bit double - GH EF CD AB
-          let res = modbus_result
+          res = modbus_result
             .slice(targetIdx, targetIdx + 8)
             .swap64()
             .swap16()
           resData = res.readDoubleBE()
           break
         case 12: //12 : 64bit double - BA DC FE HG
-          let res = modbus_result.slice(targetIdx, targetIdx + 4).swap16()
+          res = modbus_result.slice(targetIdx, targetIdx + 4).swap16()
           resData = res.readDoubleBE()
           break
         case 13: //13 : 64bit double - HG FE DC BA
-          let res = modbus_result.slice(targetIdx, targetIdx + 8).swap64()
+          res = modbus_result.slice(targetIdx, targetIdx + 8).swap64()
           resData = res.readDoubleBE()
           break
         case 14: //14 : 1bit value

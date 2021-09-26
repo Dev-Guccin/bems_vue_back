@@ -131,6 +131,7 @@ function modbusStart() {
             //frame의 개수만큼 반복하는 코드
             console.log('check:', fi)
             if (targetchannels[fi].active == 1) {
+              let func
               // active 상태일때만 반복시킴
               // console.log("타켓을 보자", targetchannels[fi])
               switch (targetchannels[fi].function_code) {

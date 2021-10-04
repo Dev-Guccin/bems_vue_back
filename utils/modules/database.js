@@ -74,7 +74,7 @@ var Database = {
     return new Promise(function (resolve, reject) {
       try {
         connection.query(
-          `select address,port from modbus_network where id = ${id}`,
+          `select network_type, address, port from modbus_network where id = ${id}`,
           (error, rows, fields) => {
             if (error) throw error
             resolve(rows[0])

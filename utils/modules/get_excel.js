@@ -2,7 +2,7 @@
 const ExcelJS = require('exceljs')
 const DBH = require('./database.js')
 
-const filePath = './uploads/Modbus.xlsx'
+const filePath = '../../uploads/Modbus.xlsx'
 
 var Excel = {
   loadExcelFile_modbus: function (filepath) {

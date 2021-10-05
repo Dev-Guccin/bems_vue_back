@@ -17,6 +17,24 @@ var Database = {
       })
     })
   },
+  get_targetChannels: function (id) {
+    return new Promise(function (resolve, reject) {
+      connection.query(`SELECT * FROM modbus_channel WHERE network_id=${id}`, (error, rows, fields) => {
+        if (error) throw error
+        resolve(rows)
+      })
+    })
+  },
+  get_targetdatas: function (id) {
+    return new Promise(function (resolve, reject) {
+      connection.query(`SELECT * FROM modbus_data WHERE m_channel=${id}`, (error, rows, fields) => {
+        if (error) throw error
+        resolve(rows)
+      })
+    })
+  },
+
+
   channel_inc: function (column, id) {
     return new Promise(function (resolve, reject) {
       connection.query(
@@ -59,30 +77,18 @@ var Database = {
       )
     })
   },
-  get_modbus_data: function (object_name) {
+  get_object_info : function(object_name){
     return new Promise(function (resolve, reject) {
       connection.query(
-        `select * from modbus_data where object_name = '${object_name}'`,
+        `select N.network_type, N.address, N.port, C.device_address, D.m_w_scale, D.m_w_offset,  D.m_w_fc,  D.m_dattype,  D.m_w_addr 
+        from modbus_data D inner join modbus_channel C on D.m_channel = C.id 
+        inner join modbus_network N on D.m_network = N.id 
+        where D.object_name = '${object_name}'`,
         (error, rows, fields) => {
           if (error) throw error
           resolve(rows[0])
         }
       )
-    })
-  },
-  get_ip_addr: function (id) {
-    return new Promise(function (resolve, reject) {
-      try {
-        connection.query(
-          `select network_type, address, port from modbus_network where id = ${id}`,
-          (error, rows, fields) => {
-            if (error) throw error
-            resolve(rows[0])
-          }
-        )
-      } catch (e) {
-        console.log(e)
-      }
     })
   },
   recover_realtime: function (object_name) {

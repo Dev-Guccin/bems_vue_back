@@ -27,7 +27,7 @@ function get_info() {
       tmp.network_type = row['network_type']
       tmp.network_id = row['network_id']
 
-      detail = await DBH.get_bacnet_staion(tmp.network_id) //접근할 station의 정보 가져온다.
+      let detail = await DBH.get_bacnet_staion(tmp.network_id) //접근할 station의 정보 가져온다.
       tmp.device_id = detail['device_id']
       tmp.object_type = detail['object_type']
       tmp.object = detail['object']
@@ -35,7 +35,7 @@ function get_info() {
       tmp.value_type = detail['value_type']
       tmp.active = detail['active']
 
-      address = await DBH.get_bacnet_device(detail['device_id']) //접근할 device의 정보 가져온다.
+      let address = await DBH.get_bacnet_device(detail['device_id']) //접근할 device의 정보 가져온다.
       tmp.ip = address['ip_address']
       tmp.port = address['port']
       tmp.period = address['period']
@@ -61,7 +61,7 @@ function get_info() {
 function bacnet_output() {
   console.log('bacnet_output 시작')
   for (let i = 0; i < ctrl_list.length; i++) {
-    target = ctrl_list[i]
+    let target = ctrl_list[i]
     console.log('target: ', target)
 
     let client = new bacnet({

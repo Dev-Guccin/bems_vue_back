@@ -16,21 +16,26 @@ var Database = {
   },
   get_targetChannels: function (id) {
     return new Promise(function (resolve, reject) {
-      connection.query(`SELECT * FROM modbus_channel WHERE network_id=${id}`, (error, rows, fields) => {
-        if (error) throw error
-        resolve(rows)
-      })
+      connection.query(
+        `SELECT * FROM modbus_channel WHERE network_id=${id}`,
+        (error, rows, fields) => {
+          if (error) throw error
+          resolve(rows)
+        }
+      )
     })
   },
   get_targetdatas: function (id) {
     return new Promise(function (resolve, reject) {
-      connection.query(`SELECT * FROM modbus_data WHERE m_channel=${id}`, (error, rows, fields) => {
-        if (error) throw error
-        resolve(rows)
-      })
+      connection.query(
+        `SELECT * FROM modbus_data WHERE m_channel=${id}`,
+        (error, rows, fields) => {
+          if (error) throw error
+          resolve(rows)
+        }
+      )
     })
   },
-
 
   channel_inc: function (column, id) {
     return new Promise(function (resolve, reject) {
@@ -75,7 +80,7 @@ var Database = {
       )
     })
   },
-  get_object_info : function(object_name){
+  get_object_info: function (object_name) {
     return new Promise(function (resolve, reject) {
       connection.query(
         `select N.network_type, N.address, N.port, C.device_address, D.m_w_scale, D.m_w_offset,  D.m_w_fc,  D.m_dattype,  D.m_w_addr 
@@ -192,6 +197,38 @@ var Database = {
         }
       }
     )
+  },
+  get_bacnet_staion: function (network_id) {
+    return new Promise(function (resolve, reject) {
+      connection.query(
+        `SELECT * FROM bacnet_station where id=${network_id};`,
+        function (error, rows, fields) {
+          if (error) {
+            console.log(error)
+            resolve()
+          } else {
+            console.log(rows[0])
+            resolve(rows[0])
+          }
+        }
+      )
+    })
+  },
+  get_bacnet_device: function (device_id) {
+    return new Promise(function (resolve, reject) {
+      connection.query(
+        `SELECT * FROM bacnet_device where id=${device_id};`,
+        function (error, rows, fields) {
+          if (error) {
+            console.log(error)
+            resolve()
+          } else {
+            console.log(rows[0])
+            resolve(rows[0])
+          }
+        }
+      )
+    })
   },
   get_ids_device: async function () {
     return new Promise(function (resolve, reject) {

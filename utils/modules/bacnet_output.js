@@ -29,17 +29,17 @@ function get_info() {
 
       let detail = await DBH.get_bacnet_staion(tmp.network_id) //접근할 station의 정보 가져온다.
       tmp.device_id = detail['device_id']
-      tmp.object_type = detail['object_type']
       tmp.object = detail['object']
+      tmp.object_type = detail['object_type']
       tmp.object_instance = detail['object_instance']
       tmp.value_type = detail['value_type']
       tmp.active = detail['active']
 
       let address = await DBH.get_bacnet_device(detail['device_id']) //접근할 device의 정보 가져온다.
-      tmp.ip = address['ip_address']
+      tmp.ip = address['address']
+      tmp.broadcast_address = address['broadcast_address']
       tmp.port = address['port']
       tmp.period = address['period']
-      tmp.broadcast_address = address['broadcast_address']
       tmp.active = address['active']
       tmp.available = address['available']
       if (tmp.active == 1 && tmp.available == 1) {

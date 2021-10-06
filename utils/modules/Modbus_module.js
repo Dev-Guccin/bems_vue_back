@@ -8,15 +8,14 @@ const sockets = []
 const clients = []
 const rtu_clients = []
 
-let Networks = new Array()
-let Channels = {}
-let Datas = {}
+let Networks
 let channel_range = {}
 modbus_poll()
 
 async function modbus_poll() {
   await Excel.loadExcelFile_modbus()
-  await getInfo()
+  Networks = await DBH.device_select('modbus_network')
+  console.log(Networks)
   //modbus poll시작하기 전에 excel정합성 확인
   for (let key in channel_range) {
     let h = channel_range[key].start
@@ -26,7 +25,6 @@ async function modbus_poll() {
       if (Datas[key][i].m_addr < h || Datas[key][i].m_addr > t) {
         console.log(h, t, Datas[key][i].m_addr)
         console.log('excel error in detail id ', Datas[key][i].id)
-        return
       }
     }
   }
@@ -35,74 +33,6 @@ async function modbus_poll() {
   modbusStart()
 }
 
-function getInfo() {
-  return new Promise(async function (resolve, reject) {
-    try {
-      let rows = await DBH.device_select('modbus_network')
-      rows.forEach((row) => {
-        let tmp = {}
-        tmp.id = row['id']
-        // tmp.name = row["name"] //사용되지 않음
-        tmp.network_type = row['network_type']
-        tmp.address = row['address']
-        tmp.port = row['port']
-        tmp.period = row['period']
-        tmp.wait_time = row['wait_time']
-        tmp.active = row['active']
-        Networks.push(tmp) //리스트에 패킷데이터를 저장한다.
-        Channels[tmp.id] = [] //ChannelName을 key값으로 리스트를 생성해준다. 리스트에는 frames들이 들어갈계획
-      })
-      rows = await DBH.device_select('modbus_channel')
-      rows.forEach((row) => {
-        let tmp = {}
-        let r = {}
-        tmp.id = row['id']
-        // tmp.fr_name = row["name"]
-        tmp.network_id = row['network_id']
-        tmp.function_code = row['function_code']
-        tmp.device_address = row['device_address']
-        tmp.start_address = row['start_address']
-        tmp.quantity = row['quantity']
-        tmp.active = row['active']
-        Channels[tmp.network_id].push(tmp) //channelname에 맞게 리스트에 차례로 삽입한다. 나중에 패킷 보낼때 사용함.'
-        Datas[tmp.id] = []
-        r.start = tmp.start_address
-        r.end = tmp.start_address + tmp.quantity - 1
-        channel_range[tmp.id] = r
-      })
-      rows = await DBH.device_select('modbus_Data')
-      rows.forEach((row) => {
-        let tmp = {}
-        tmp.object_name = row['object_name']
-        tmp.object_type = row['object_type']
-        if (tmp.object_type.charAt(0) == 'B') {
-          tmp.m_addr = parseInt(row['m_addr'], 16)
-          // tmp.m_w_addr = parseInt(row['m_w_addr'], 16)
-        } else {
-          tmp.m_addr = parseInt(row['m_addr'])
-          // tmp.m_w_addr = parseInt(row['m_w_addr'])
-        }
-        tmp.id = row['id']
-        tmp.units = row['unit']
-        tmp.low_limit = row['low_limit']
-        tmp.high_limit = row['high_limit']
-        tmp.active = row['active']
-        // tmp.m_network = row['m_network']
-        tmp.m_channel = row['m_channel']
-        tmp.m_func = row['m_func']
-        tmp.m_bitoffset = row['m_bitoffset']
-        tmp.m_dattype = row['m_dattype']
-        tmp.m_r_scale = row['m_r_scale']
-        tmp.m_r_offset = row['m_r_offset']
-        Datas[tmp.m_channel].push(tmp)
-      })
-      console.log('info 완료')
-      resolve()
-    } catch (e) {
-      console.log('get network info error : ', e)
-    }
-  })
-}
 
 function modbusStart() {
   for (let i = 0; i < Networks.length; i++) {
@@ -123,7 +53,9 @@ function modbusStart() {
       sockets[i].on('connect', async function () {
         //소켓이 연결되는 경우 어떻게 사용할 건지
         console.log('connected!!!!', Networks[i].address)
-        let targetchannels = Channels[Networks[i].id]
+        console.log(Networks[i].id)
+        let targetchannels = await DBH.get_targetChannels(Networks[i].id)
+        // coneole.log(targetchannels)
         console.log('targetFrame!!!', targetchannels)
         setInterval(() => {
           console.log('SetInterval!')
@@ -188,7 +120,7 @@ function modbusStart() {
       })
       rtu_clients[i] = []
       sockets[i].on('open', async function () {
-        let targetchannels = Channels[Networks[i].id] // ip의 id에 해당하는 데이터들을 가져온다.
+        let targetchannels = await DBH.get_targetChannels(Networks[i].id) // ip의 id에 해당하는 데이터들을 가져온다.
         setInterval(async () => {
           for (let fi = 0; fi < targetchannels.length; fi++) {
             // socket과 slave_id를 통해 clients를 열어준다.
@@ -247,26 +179,18 @@ function modbusStart() {
   }
 }
 
-function response_process(targetchannels_fi, resp) {
+async function response_process(targetchannels_fi, resp) {
   DBH.channel_inc('rx', targetchannels_fi.id)
   let se, sensors, targetIdx, resData, res
   let modbus_result = resp.response._body._valuesAsBuffer
   //console.log(modbus_result, Buffer.byteLength(modbus_result, 'utf8'), targetchannels_fi.quantity)
   //이제 여기서 데이터를 정규화 하는 작업 해야함
-  sensors = Datas[targetchannels_fi.id] //detail객체
+  sensors = await DBH.get_targetdatas(targetchannels_fi.id) //detail객체
   if (sensors === undefined || sensors.length == 0) return //Detail이 정의되어 있지 않은 경우 연산없이 넘긴다.
   //console.log("set read:", targetchannels_fi.start_address, targetchannels_fi.quantity)
   for (se = 0; se < sensors.length; se++) {
     if (sensors[se].active == 0) continue
     try {
-      // if (sensors[se].object_type.charAt(0) == 'B'){ //binary값인 경우
-      //     targetIdx = parseInt((sensors[se].m_addr - targetchannels_fi.start_address)/8)
-      //     res = "00000000" + parseInt(modbus_result.slice(targetIdx,targetIdx + 1).toString('hex'),16).toString(2)
-      //     // console.log('결과 비트',res)
-      //     bitoffset = (sensors[se].m_addr - targetchannels_fi.start_address) % 8
-      //     // console.log("비트 ",bitoffset)
-      //     resData = res.charAt(res.length-1-bitoffset)
-      // }else{
       targetIdx = (sensors[se].m_addr - targetchannels_fi.start_address) * 2
       switch (sensors[se].m_dattype) {
         case 0: //unsigned int 16bit AB

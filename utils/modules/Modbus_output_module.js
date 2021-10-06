@@ -18,21 +18,19 @@ function get_info(){
     return new Promise(async function(resolve, reject) {
         var rows = await DBH.select_not_null('mysql');
         for (const row of rows){
-            // console.log(row)
             tmp =  {}
-            // tmp.id = row["id"]
             tmp.ctrl_value = row['ctrl_value']
             tmp.object_name = row["object_name"]
-            detail = await DBH.get_modbus_data(row["object_name"])// get scale,offset,func,dattype,address
-            tmp.scale = detail['m_w_scale']
-            tmp.offset = detail['m_w_offset']
-            tmp.func = detail['m_w_fc']
-            tmp.dattype = detail['m_dattype']
-            tmp.m_w_address = Number(detail['m_w_addr'])
-            address = await DBH.get_ip_addr(detail['m_network'])//ip_address,port
-            tmp.address = address['address']
-            tmp.port = address['port']
-            tmp.network_type = address['network_type']
+            // detail = await DBH.get_modbus_data(row["object_name"])// get scale,offset,func,dattype,address
+            // tmp.scale = detail['m_w_scale']
+            // tmp.m_w_offset = detail['m_w_m_w_offset']
+            // tmp.func = detail['m_w_fc']
+            // tmp.dattype = detail['m_dattype']
+            // tmp.m_w_addr = Number(detail['m_w_addr'])
+            // address = await DBH.get_ip_addr(detail['m_network'])//ip_address,port
+            // tmp.address = address['address']
+            // tmp.port = address['port']
+            // tmp.network_type = address['network_type']
             ctrl_list.push(tmp)
         }
         console.log('get_info완료')
@@ -115,6 +113,7 @@ function modbus_output(){
     for (var i =0 ; i < ctrl_list.length; i++){
         target = ctrl_list[i]
         console.log('target: ',target)
+        target = Object.assign({}, ctrl_list[i], await DBH.get_object_info(ctrl_list[i].object_name)); //dictionary두개 합치기
 
         if (target.network_type == 'tcp/ip'){
             const socket = new net.Socket()
@@ -124,12 +123,11 @@ function modbus_output(){
             'port': target.port
             }
             socket.on('connect', function () {
-                value = target.ctrl_value*target.scale + target.offset//multi 이면 list , single이면 그냥 단일 value
+                value = target.ctrl_value*target.m_w_scale + target.m_w_offset//multi 이면 list , single이면 그냥 단일 value
                 // console.log(value)
-                buf  = make_buffer(target.dattype, value)
+                buf  = make_buffer(target.m_dattype, value)
                 console.log(buf)
-                //주소처리 다시 확인해야 함
-                switch (target.func){
+                switch (target.m_w_fc){
                     case 5://write single coil
                         func = client.writeSingleCoil(target.address,buf)
                         break
@@ -165,11 +163,10 @@ function modbus_output(){
             const client = new Modbus.client.RTU(socket, target.device_address)
 
             socket.on('open', function () {
-                value = target.ctrl_value*target.scale + target.offset//multi 이면 list , single이면 그냥 단일 value
+                value = target.ctrl_value*target.m_w_scale + target.m_w_offset//multi 이면 list , single이면 그냥 단일 value
                 // console.log(value)
-                buf  = make_buffer(target.dattype, value)
+                buf  = make_buffer(target.m_dattype, value)
                 console.log(buf)
-                //주소처리 다시 확인해야 함
                 switch (target.func){
                     case 5://write single coil
                         func = client.writeSingleCoil(target.address,buf)
@@ -189,39 +186,8 @@ function modbus_output(){
             })
             socket.on('error', console.error)
             socket.connect(options)
-
-
         }
-        
-        
     }
-    
 }
 
-
-
-
-// const modbus = require('jsmodbus')
-// const Serialport = require('serialport')
-// const socket = new Serialport('COM5', {
-//   baudRate: 9600,
-// })
-
-// // set Slave PLC ID
-// device_address = 1
-// const client = new modbus.client.RTU(socket, device_address)
-
-// socket.on('connect', function () {
-//   client.writeSingleRegister(0, 123).then(function (resp) {
-//     console.log(resp)
-//     socket.close()
-//   }).fail(function (err) {
-//     console.log(err)
-//     socket.close()
-//   })
-// })
-
-// socket.on('error', function (err) {
-//   console.log(err)
-// })
 

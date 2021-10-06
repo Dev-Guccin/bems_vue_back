@@ -1,6 +1,0 @@
-{
-    "port": 47808,
-    "interface": "192.168.219.102",
-    "broadcastAddress": "192.168.0.255",
-    "apduTimeout": 10000
-}

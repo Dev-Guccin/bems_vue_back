@@ -1,11 +1,8 @@
 var mysql = require('mysql')
-var dbconfig = {
-  host: 'localhost',
-  user: 'root',
-  password: '4msys',
-  database: 'bems',
-}
-const connection = mysql.createConnection(dbconfig)
+
+const config = require('../../config')
+
+const connection = mysql.createConnection(config.dbconfig)
 connection.connect()
 
 var Database = {
@@ -47,11 +44,12 @@ var Database = {
         if (error) throw error
       }
     )
-  }, //output에 사용하는 함수
+  },
+  //output에 사용하는 함수
   select_not_null: function (network_type) {
     return new Promise(function (resolve, reject) {
       connection.query(
-        `SELECT object_name, ctrl_value from realtime_table where ctrl_value is not null and network_type = '${com_type}'`,
+        `SELECT * from realtime_table where ctrl_value is not null and network_type = '${network_type}'`,
         (error, rows, fields) => {
           if (error) throw error
           resolve(rows)

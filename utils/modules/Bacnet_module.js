@@ -1,11 +1,11 @@
 'use strict'
-
 const DBH = require('./database.js')
 var Excel = require('./get_excel.js')
 
 const bacnet = require('node-bacnet')
-const bacnetConfig = require('./config.json')
-const client = new bacnet(bacnetConfig)
+const config = require('../../config')
+const client = new bacnet(config.bacnetconfig)
+
 let checkArray = new Array()
 let checkTimeArray = new Array()
 
@@ -15,20 +15,22 @@ client.on('iAm', (msg) => {
   DBH.set_available(msg.header.sender.address)
 })
 client.on('whoIs', (msg) => {})
+
 async function main() {
   //1. 엑셀의 설정을 db로 옮긴다.
-  await Excel.loadExcelFile_bacnet()
+  await Excel.loadExcelFile_bacnet('upload/Bacnet.xlsx')
 
   //2. whois로 존재하는 오브젝트들 확인 → active
-  client.whoIs(bacnetConfig.broadcastAddress)
+  client.whoIs(config.bacnetconfig.broadcastAddress)
   setInterval(() => {
-    client.whoIs(bacnetConfig.broadcastAddress)
+    client.whoIs(config.bacnetconfig.broadcastAddress)
   }, 1000 * 60 * 4) //1분마다 보내기
-  //client.whoIs(bacnetConfig.broadcastAddress)
+  //client.whoIs(config.bacnetconfig.broadcastAddress)
 
   console.log('[+] start data polling....')
   //3. id들을 전부 가져옴
   let idslist = await DBH.get_ids_device()
+  console.log(idslist)
   //3. db station에서 데이터를 읽는다.
   for (let i = 0; i < idslist.length; i++) {
     //배열 초기화
@@ -38,6 +40,7 @@ async function main() {
   //setInterval(()=>{DBH.reset_available()}, 1000*60*5)//5분마다 통신 재설정
   setInterval(async () => {
     //여기서 가능한지 확인한다
+    console.log('start interval')
     for (let i = 0; i < idslist.length; i++) {
       let idperiod = await DBH.get_ids_device_available(idslist[i].id)
       if (idperiod == undefined) continue
@@ -60,11 +63,11 @@ async function bacnet_device_poll(i, id) {
   let device = await DBH.get_device_from_id(id)
 
   let ip_address =
-    `${device.ip_address}` + (device.port == -1 ? '' : ':' + device.port)
-  //console.log("[+] connect to ip:", ip_address)
+    `${device.address}` + (device.port == 47808 ? '' : ':' + device.port)
+  console.log('[+] connect to ip:', ip_address)
 
   let idslist = await DBH.get_ids_station(id)
-  //console.log("[+] available ids device:", id, " idslist:", idslist, " length:", idslist.length)
+  //console.log('[+] available ids device:',    id,    ' idslist:',    idslist,    ' length:',    idslist.length  )
   //console.log("[+++] create requestArray")
 
   let requestArray = new Array()
@@ -93,13 +96,14 @@ function sync_readPropertyMultiple(ip_address, requestArray, station) {
         resolve()
       }
       if (value) {
+        console.log(value)
         //데이터를 받았으니 이제 값을 realtime_table에 넣어준다.
         for (let i = 0; i < value.values.length; i++) {
-          element = value.values[i]
+          let element = value.values[i]
           if (typeof element.values[0].value[0].value == typeof {}) continue
           DBH.realtime_upsert_bacnet(
             station[i].id,
-            station[i].name,
+            station[i].object_name,
             element.values[0].value[0].value,
             station[i].object,
             station[i].id

@@ -1,0 +1,9 @@
+Error: bind EADDRNOTAVAIL 192.168.219.102:47808
+    at dgram.js:337:20
+    at processTicksAndRejections (internal/process/task_queues.js:81:21) {
+  errno: -4090,
+  code: 'EADDRNOTAVAIL',
+  syscall: 'bind',
+  address: '192.168.219.102',
+  port: 47808
+}

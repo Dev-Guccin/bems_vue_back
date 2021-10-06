@@ -3,9 +3,10 @@ const ExcelJS = require('exceljs')
 const DBH = require('./database.js')
 
 const filePath = './uploads/Modbus.xlsx'
+const BacnetfilePath = './uploads/Bacnet.xlsx'
 
 var Excel = {
-  loadExcelFile_modbus: function (filepath) {
+  loadExcelFile_modbus: function () {
     return new Promise(async function (resolve, reject) {
       try {
         var page, i
@@ -134,11 +135,11 @@ var Excel = {
       }
     })
   },
-  loadExcelFile_bacnet: function (filepath) {
+  loadExcelFile_bacnet: function () {
     return new Promise(async function (resolve, reject) {
       try {
         const workbook = new ExcelJS.Workbook() // 엑셀의 객체
-        await workbook.xlsx.readFile(filePath)
+        await workbook.xlsx.readFile(BacnetfilePath)
         for (let page = 0; page < 2; page++) {
           const sheetData = []
           const worksheet = workbook.worksheets[page] // 첫 번째 sheet 선택
